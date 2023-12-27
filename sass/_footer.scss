@@ -1,0 +1,158 @@
+footer {
+    background-color: #523024;
+    color: #fff;
+    padding: 1rem;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-areas:
+        "tarjeta nav__footer newsletter btn";
+    grid-template-columns: 30% 30% 30% 30%;
+    justify-content: flex-start;
+    align-content: flex-end;
+    font-size: 1.5rem;
+}
+
+.footer__tarjeta {
+    font-size: 1.5rem;
+    font-family: cursive;
+    text-align: left;
+    grid-area: tarjeta;
+    grid-column: auto;
+    grid-row: auto;
+
+}
+
+.footer__tarjeta--logo {
+    max-height: 10rem;
+    width: auto;
+}
+
+.footer__nav {
+    display: flex;
+    grid-column: auto;
+    grid-row: auto;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    grid-area: nav__footer;
+    margin-top: 2rem;
+    margin-right: 5rem;
+
+}
+
+.footer__nav a {
+    text-align: center;
+    font-size: 2rem;
+    font-family: cursive;
+    color: #fff;
+    text-decoration: none;
+
+    &#link__naranja__footer:hover{
+        color: #ff4500;
+    }
+}
+
+.footer__nav li {
+    font-size: 1rem;
+}
+
+.btn__footer__container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    grid-column: auto;
+    grid-row: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    font-size: 3rem;
+    grid-area: newsletter;
+}
+
+.newsletter__titulo {
+    margin-bottom: 2rem;
+    font-family: "cursive";
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter__footer__input {
+    font-family: $main-font-family;
+    margin-bottom: 2rem;
+    font-size: 2.5rem; 
+}
+
+.modal-header {
+    background-color: orange;
+    border-bottom: none;
+}
+
+.modal-body {
+    font-size: 3rem;
+    font-family: $main-font-family;
+    text-align: center;
+    color: #000;
+    background-color: #ffa500;
+}
+
+.modal-footer {
+    background-color: #ffa500;
+    border-top: none;
+}
+
+.footer__redes__logos {
+
+    display: flex;
+
+    .logo__instagram__footer {
+
+        height: 5rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+
+    .logo__fb__footer {
+        height: 5rem;
+        margin-top: 2rem;
+        
+    }
+}
+
+/*.....................................MEDIAS QUERIES INDEX: CELULARES...............*/
+@media only screen and (max-width: 599px) {
+    .footer__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "tarjeta__contacto"
+            "footer__logo";
+    }
+
+    .tarjeta__contacto {
+        font-size: 2rem;
+    }
+
+    .footer__logo {
+        grid-area: footer__logo;
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .footer__nav,
+    .newsletter__titulo,
+    .newsletter__footer__input,
+    .logo__instagram__footer,
+    .logo__fb__footer,
+    .btn__enviar__footer,
+    .footer__redes__logos {
+        display: none;
+    }
+}
+

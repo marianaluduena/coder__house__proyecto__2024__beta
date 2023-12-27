@@ -1,0 +1,1053 @@
+$colors:(
+    orange:#ffa500,
+    darkOrange: #ff4500,
+    brown: #523024,
+);
+
+@each $colorcito,
+$color in $colors {
+
+    .bg--#{$colorcito} {
+        background-color: $color;
+    }
+}
+
+/*--------------------------------------------INDEX: PORTADA-----------------------------------------------------*/
+
+.row__portada__index {
+    max-width: 100%;
+    margin: auto;
+}
+
+.portada__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-color: orange;
+    height: 500px;
+    font-size: 50px;
+    font-weight: 30px;
+    margin-bottom: 5rem;
+}
+
+.portada__index {
+    @extend .portada__container;
+    background-image: url("../images/small-images/portada_index.jpg");
+}
+
+.portada__btn__link__al__menu__container {
+    display: flex;
+    height: 500px;
+}
+
+a {
+    &#link__al__menu__especial {
+        align-self: center;
+    }
+}
+
+.btn__menu {
+    margin: auto;
+}
+
+/*............................ANIMACIÓN TÍTULOS PORTADA INDEX........................*/
+
+.banner__text {
+    transform: translate(-5%, -5%);
+
+    h1 {
+        text-align: center;
+        font-size: 10rem;
+    }
+}
+
+/*..........................CLASE BOX PARA ANIMACION DE PORTADA DEL INDEX..................*/
+
+.box {
+    font-size: map-get($caja-titulos-anim-index, fuenteTam);
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.b1 {
+    animation: animUno 15s infinite;
+}
+
+.b2 {
+    animation: animDos 15s infinite;
+}
+
+.b3 {
+    animation: animTres 15s infinite;
+}
+
+.b4 {
+    animation: animCuatro 15s infinite;
+}
+
+@keyframes animUno {
+
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+}
+
+@keyframes animDos {
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+@keyframes animTres {
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+}
+
+@keyframes animCuatro {
+
+    60% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+}
+
+@keyframes animCinco {
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*------------------------INDEX: SOLUCION DE LA EMPRESA----------------*/
+
+.propuesta__container__grid {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+
+    .solucion__image__container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-left: 1rem;
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+
+    }
+
+    .solucion__descripcion__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+
+        .solucion__descripcion {
+            padding: 3.5rem;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            margin-left: 2.5rem;
+            margin-right: 2rem;
+            line-height: 3rem;
+            font-size: 2rem;
+            font-family: $main-font-family;
+            text-align: center;
+            background-color: #ffa500;
+        }
+
+        .aside {
+            background-color: #ff4500;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-left: 2.5rem;
+            padding: 2rem;
+
+            .aside__descripcion {
+                font-family: $main-font-family;
+                font-size: 3rem;
+                text-align: center;
+                line-height: 3.5rem;
+                margin-bottom: 3rem;
+                margin-left: 3.2rem;
+            }
+
+        }
+    }
+}
+/*------------------------INDEX: MAIN (VALORES DE LA EMPRESA)----------------*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30rem;
+}
+
+.grid__main__container {
+    display: grid;
+    grid-template-areas:
+        "comidaUno comidaDos comidaTres"
+        "cualidadUno cualidadDos cualidadTres"
+        "textoUno textoDos textoTres";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+    max-width: 1450px;
+
+    .articulo__en__columnas__container {
+        display: flex;
+        flex-direction: column;
+
+        .img__redonda__container {
+            display: flex;
+            justify-content: center;
+
+            .img__redonda {
+                height: auto;
+                max-width: 100%;
+                border-radius: 80%;
+                margin-bottom: 4rem;
+            }
+        }
+
+        .texto__en__columnas__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+@mixin img-grid-col-row ($grid-col, $grid-row) {
+    grid-column: $grid-col;
+    grid-row: $grid-row;
+}
+
+.comidaUno {
+    grid-area: comidaUno;
+    @include img-grid-col-row(auto, auto);
+}
+
+.comidaDos {
+    grid-area: comidaDos;
+    @include img-grid-col-row(auto, auto);
+}
+
+.comidaTres {
+    grid-area: comidaTres;
+    @include img-grid-col-row(auto, auto);
+}
+
+/*...............................INDEX: FORMULARIO DE CONTACTO...........................*/
+
+@mixin campo-form {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 2.5rem;
+}
+
+.contacto__container {
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    border: solid 1px #000;
+    background-color: #ff4500;
+    border-radius: 4px;
+
+    form .campo {
+            @include campo-form;
+
+            &#consulta {
+                height: 30rem;
+            }
+        }
+}
+
+.modal-header {
+    background-color: orange;
+    border-bottom: none;
+}
+
+.modal-body {
+    font-size: 3rem;
+    font-family: $main-font-family;
+    text-align: center;
+    color: #000;
+    background-color: #ffa500;
+}
+
+.modal-footer {
+    background-color: #ffa500;
+    border-top: none;
+}
+
+/*............................... INDEX: MEDIOS DE PAGO...........................*/
+
+.pagos__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-position: center;
+    background-color: #ffa500;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    padding: 3%;
+
+    img {
+        height: auto;
+        max-width: 90%;
+
+        .img-fluid {
+            height: 100%;
+            width: auto;
+            margin-top: 25;
+            margin-bottom: 0.5%;
+        }
+    }
+}
+
+/*............................... INDEX: WHATSAPP Y FLECHA PARA SUBIR...........................*/
+
+.iconos__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #ffa500;
+    margin: auto;
+
+    .iconos__wspYFlecha {
+        max-width: 100px;
+        height: 50%;
+    }
+}
+
+/*.....................................MEDIAS QUERIES INDEX : CELULARES...............*/
+
+@media only screen and (max-width: 599px) {
+    header {
+        nav {
+            .container-fluid {
+                background-color: greenyellow;
+
+                header nav li a {
+                    display: none;
+                }
+
+                .navbar-toggler-icon {
+                    padding: 40px;
+                }
+
+                .header__nav--carrito {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .portada__titulo { /*CLASE NO USADA EN EL INDEX PERO SÍ EN LAS OTRAS PORTADAS */
+        font-size: 7rem;
+    }
+
+    .portada__index{
+        height: 100%;
+    }
+
+    .banner__text h1 {
+        font-size: 4.5rem;
+        text-align: center;
+        margin-top: 5rem;
+        margin-left: 3.5rem;
+        color: #000;
+    }
+
+    .portada__btn__link__al__menu__container {
+        height: auto;
+
+        .btn__menu {
+            max-width: 200px;
+            margin-left: 2rem;
+            margin-top: 5rem;
+        }
+    }
+
+    .info__contacto__descripcion,
+    .subtitulo__principal,
+    .propuesta__container__grid,
+    .animUno,
+    .animDos,
+    .animTres,
+    .animCuatro,
+    .subtitulo__principal__uno,
+    .solucion__image__container,
+    .solucion__descripcion,
+    .aside {
+        display: none;
+    }
+
+    .subtitulo__principal {
+        font-size: 5rem;
+    }
+
+    .grid__main__container {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "comidaUno"
+            "comidaDos"
+            "comidaTres"
+        ;
+        max-width: 599px;
+        margin-top: 5rem;
+    }
+
+    .subtitulos__especiales {
+        font-size: 5rem;
+    }
+
+    .parrafo__descripcion {
+        font-size: 3rem;
+    }
+
+    .btn__menu {
+        font-size: 3rem;
+
+        &#btn__menu__main {
+            width: 50%;
+            height: 15rem;
+        }
+
+    }
+
+    .contacto__container {
+
+        margin: 5%;
+
+        .parrafo__form__encabezado {
+
+            display: none;
+        }
+
+        form {
+            .campo {
+                width: 100%;
+                font-size: 1.5rem;
+            }
+
+            textarea {
+                max-height: 320px;
+            }
+        }
+    }
+
+    .pagos__container {
+        margin-top: 5rem;
+    }
+
+    .container__btn__wsp,
+    .btn__wsp {
+        display: none;
+    }
+}
+
+/*.....................................MEDIAS QUERIES INDEX: TABLETS...............*/
+
+@media only screen and (min-width: 768px) {
+
+    nav {
+        width: 100%;
+
+        .navbar-toggler-icon {
+            background-color: #ffa500;
+            padding: 2.3rem;
+        }
+    }
+
+    .banner__text h1 {
+        font-size: 8rem;
+        color: #000;
+    }
+
+    .propuesta__container__grid {
+        grid-template-columns: (3, 1fr);
+        grid-area:
+            "solucion__descripcion__grid"
+            "aside__grid";
+    }
+
+    .pagos__container .container {
+        width: auto;
+    }
+}
+
+/*...........................................INICIO PORTADA PAGINA MENU..............................*/
+
+.portada__menu {
+    @extend .portada__container;
+    background-image: url("../images/viandas_calabaza.jpg");
+}
+
+/*..................................... .....PAGINA NUESTRO MENÚ........................................................*/
+
+.articulo__menu__container {
+    margin-right: 4rem;
+    margin-left: 2rem;
+}
+
+main {
+    #galeria img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .card {
+        .platos {
+            height: 240px;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .card__img__platos:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .card-title {
+        text-align: center;
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/*..............................................NUESTRO MENU: MEDIAS QUERIES...................*/
+
+@media only screen and (max-width: 599px) {
+
+    .portada__menu{
+        height: 100%;
+    }
+
+    .parrafo__menu {
+        font-size: 3rem;
+    }
+
+    .btn__comprar {
+        width: 100%;
+        font-size: 3rem;
+    }
+}
+
+/*...........................................PORTADA PAGINA PREGUNTAS FREC..............................*/
+
+.portada__preguntas {
+    @extend .portada__container;
+    background-image: url("../images/viandas_empresariales.jpg");
+}
+
+/*.....................................PAGINA PREGUNTAS FRECUENTES........................................................*/
+
+.funcionamiento__parent__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 3%;
+}
+
+.funcionamiento__container {
+    display: grid;
+    grid-template-areas:
+        "subtitulo__principal"
+        "imgUno imgDos imgTres"
+        "tituloUno tituloDos tituloTres"
+        "descripUno descripDos descripTres";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+}
+
+.funcionamiento__articulo__container {
+    overflow: hidden;
+
+    .img__propiedades {
+        height: 300px;
+        width: 100%;
+        margin-top: 2px;
+    }
+
+    .imgUno {
+        grid-area: imgUno;
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .imgDos {
+        grid-area: imgDos;
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .imgTres {
+        grid-area: imgTres;
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .card-title {
+        .tituloUno {
+            grid-area: tituloUno;
+            grid-row: auto;
+            grid-column: auto;
+        }
+
+        .tituloDos {
+            grid-area: tituloDos;
+            grid-row: auto;
+            grid-column: auto;
+        }
+
+        .tituloTres {
+            grid-area: tituloTres;
+            grid-row: auto;
+            grid-column: auto;
+        }
+    }
+
+    .card-text {
+        .descripUno {
+            grid-area: descripUno;
+            grid-row: auto;
+            grid-column: auto;
+        }
+
+        .descripDos {
+            grid-area: descripDos;
+            grid-row: auto;
+            grid-column: auto;
+        }
+
+        .descripTres {
+            grid-area: descripTres;
+            grid-row: auto;
+            grid-column: auto;
+        }
+    }
+}
+
+/*......................  CONTAINER PREGUNTAS..................................*/
+
+.preguntas__container__principal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .preguntas__elementos {
+        padding: 0;
+        background-color: #ff4500;
+        padding: 60px 55px;
+        margin-bottom: 5rem;
+    }
+}
+
+.preguntas__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    max-width: 1800px;
+    background-color: #ffa500;
+    padding: 5rem;
+
+    .preguntas__articulo {
+        margin-left: 10px;
+
+        h3 {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+}
+
+
+/*...................... PREGUNTAS FRECUENTES: MEDIAS QUERIES CELULARES..................................*/
+
+@media only screen and (max-width: 599px) {
+
+    .portada__preguntas{
+        height: 100%;
+    }
+
+    main {
+        .funcionamiento__container {
+
+            display: grid;
+            flex-direction: column;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "imgUno"
+                "imgDos"
+                "imgTres"
+            ;
+            margin-bottom: 3rem;
+        }
+
+        .preguntas__container {
+            display: grid;
+            flex-direction: column;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            justify-content: center;
+        }
+    }
+}
+
+/*...........................................PORTADA PAGINA NOSOTROS..............................*/
+
+.portada__nosotros {
+    @extend .portada__container;
+    background-image: url("../images/plato_7.jpg");
+}
+
+/*............................................PAGINA NOSOTROS........................................................*/
+
+.parent__container__nosotros {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+/*.................. NOSOTROS: INICIO PRIMER CONTAINER CON IMG Y TEXTO HISTORIA DE LA EMPRESA........................*/
+
+.historia__container__uno {
+    display: flex;
+    flex-direction: row;
+
+}
+
+@mixin historia__container__subtitulos {
+    display: flex;
+    background-color: #fff;
+}
+
+.historia__container__subtitulo__uno {
+    @include historia__container__subtitulos;
+    margin-left: 15%;
+    justify-content: start;
+}
+
+@mixin historia__container__textos {
+    display: flex;
+    flex-direction: column;
+    background-color: #523024;
+    max-width: 50%;
+}
+
+.historia__container__texto {
+    @include historia__container__textos;
+}
+
+.parrafo__historia {
+    margin: auto;
+}
+
+@mixin img__historia__container {
+    display: flex;
+    width: 100%;
+    background-color: #ff4500;
+}
+
+.img__historia__container__uno {
+
+    @include img__historia__container;
+}
+
+@mixin img__historia__medidas {
+    width: 100%;
+    height: auto;
+}
+
+.img__historia {
+    @include img__historia__medidas;
+}
+
+/*..................NOSOTROS: INICIO SEGUNDO CONTAINER CON IMG Y TEXTO HISTORIA DE LA EMPRESA........................*/
+
+.historia__container__dos {
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.historia__container__subtitulo__dos {
+
+    @include historia__container__subtitulos;
+    justify-content: flex-end;
+    margin-right: 20%;
+}
+
+.img__historia__container__dos {
+
+    @include img__historia__container;
+}
+
+/*..................NOSOTROS: INICIO TERCER CONTAINER CON IMG Y TEXTO HISTORIA DE LA EMPRESA........................*/
+
+.historia__container__subtitulo__tres {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.historia__container__tres {
+    display: flex;
+    flex-direction: row;
+}
+
+.img__historia__container__tres {
+
+    @include img__historia__container;
+}
+
+.historia__container__tres__texto {
+
+    @include historia__container__textos;
+}
+
+/*..................................... NOSOTROS: MEDIAS QUERIES CELULARES..............................................*/
+
+@media only screen and (max-width: 599px) {
+
+    .portada__nosotros{
+        height: 100%;
+    }
+
+    .historia__container__uno {
+        flex-direction: column;
+
+    }
+
+    .historia__container__texto {
+        max-width: 100%;
+        .historia__container__subtitulo__uno{
+            margin-bottom: 3rem;
+        }
+    }
+
+    .img__historia__container__uno{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .historia__container__dos {
+        flex-direction: column;
+        .historia__container__subtitulo__dos{
+            margin-bottom: 3rem;
+        }
+        .img__historia__container__dos{
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .historia__container__tres {
+        flex-direction: column;
+        .img__historia__container__tres{
+             margin-bottom: 3rem;
+        }
+    }
+
+    .historia__container__tres__texto {
+        max-width: 100%;
+    }
+
+    .parrafo__historia {
+        font-size: 3rem;
+    }
+}
+
+/*...........................................PORTADA PAGINA CONTACTO..............................*/
+
+.portada__contacto {
+    @extend .portada__container;
+    background-image: url("../images/small-images/viandas_varias.jpg");
+}
+
+/*..................................... PAGINA CONTACTO........................................................*/
+
+.redes__sociales__logos__container {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+@mixin logos-redes-box-model($height, $margin-right, $margin-top, $margin-bottom) {
+    height: $height;
+    margin-right: $margin-right;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+}
+
+.logo__instagram {
+    @include logos-redes-box-model(5rem, 2rem, 2rem, 2rem);
+}
+
+.logo__facebook {
+    @include logos-redes-box-model(5rem, 2rem, 2rem, 2rem);
+}
+
+form {
+    .campo {
+        @include campo-form;
+
+        &#mensaje {
+            height: 30rem;
+        }
+    }
+}
+
+.mapa__container {
+    display: flex;
+    justify-content: center;
+    max-width: 300%;
+}
+
+.mapa {
+    width: 100%;
+    margin: 50px;
+}
+
+.redes__sociales__contenedor__padre {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .redes__sociales__logos__container__logos {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+
+        .logo__instagram__main {
+            @extend .logo__instagram;
+            height: 10rem;
+        }
+
+        .logo__facebook__main {
+            @extend .logo__facebook;
+            height: 10rem;
+        }
+    }
+
+    .redes__sociales__contenedor__padre div {
+        justify-content: center;
+    }
+}
+
+/*..................................... CONTACTO: MEDIAS QUERIES CELULARES..........................................*/
+
+@media only screen and (max-width: 599px) {
+
+    .portada__contacto{
+        height: 100%;
+    }
+
+    .parrafo__form {
+        display: none;
+    }
+
+    .campo {
+        width: 100%;
+    }
+
+    .btn__seguir {
+        font-size: 2rem;
+        width: 30%;
+    }
+}
+
+/*......................WHATSAPP ANIMACIÓN...................*/
+
+.container__btn__wsp {
+    background-color: #008000;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: anim-wsp 1.2s infinite;
+}
+
+.container__btn__wsp:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.btn-wsp {
+    width: 50px;
+    transition: ease 1s;
+}
+
+@keyframes anim-wsp {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}

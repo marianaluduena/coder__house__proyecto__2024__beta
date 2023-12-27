@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css-bst/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="shortcut icon" href="../images/favicon.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Indie+Flower&family=Rancho&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Indie+Flower&family=Pridi:wght@500;700&family=Rancho&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Indie+Flower&display=swap"
+    rel="stylesheet">
+  <meta name="DESCRIPTION"
+    content="Nuestro menu incluye tartas, fideos integrales con guarnición, milanesas, carnes y mucho más. Además armamos cajas especiales a pedido y personalizadas" />
+  <title> Nuestro menú</title>
+  <META name="KEYWORDS" content="milanesas de soja,comidas light,bajas calorías,rico y sano,rico y saludable">
+</head>
+
+<body>
+
+  <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" class="header__logo"
+            alt="corazon de frutas y verduras" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <a id="link__naranja" aria-current="page" href="../index.html">Home</a>
+
+            <a id="link__naranja" aria-current="page" href="./menu.html">Nuestro menu</a>
+
+            <a id="link__naranja" aria-current="page" href="./preguntas_frecuentes.html">Preguntas frecuentes</a>
+
+            <a id="link__naranja" aria-current="page" href="./nosotros.html">Nosotros</a>
+
+            <a id="link__naranja" aria-current="page" href="./contacto.html">Contacto</a>
+
+          </ul>
+        </div>
+        <div>
+          <img class="header__nav--carrito" src="../images/small-images/carrito_compras_small.png"
+            alt="carrito de compras" />
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <section>
+    <div>
+      <article class="info__contacto__descripcion">
+        <ul>
+          <li>Dirección: Av. Siempreviva 123 - Olivos - Buenos Aires</li>
+          <li>Tel.: +54 111-222-444</li>
+          <li>WhatsApp: +54 11 3322-1144</li>
+          <li>E-Mail: viandasGaia@fakemail.com</li>
+          <li>Días y horarios: L a V de 11 a 15 y de 19 a 23 hs</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="portada__container portada__menu">
+      <h1 class="portada__titulo">Menú</h1>
+    </div>
+  </section>
+
+  <!--Texto y platos -->
+
+  <section>
+    <div class="articulo__menu__container">
+      <article>
+        <p class="parrafo__menu">
+
+          Tentate con nuestros exquisitos platos! Te ayudamos a salvar el almuerzo, la cena. Ambas si querés!
+          Incluso podemos ayudarte a organizar tus comidas con un armado de cajas: para 7 dias, 14 días e incluso para
+          28 días!
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <main id="galeria">
+
+    <div class="container platos__grilla">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="../images/plato_1.jpg" alt="pollo con verduras salteadas"
+                class="platos card-img-top card__img__platos">
+              <div class="card-body">
+                <h4 class="card-title">Pollo con verduras salteadas</h4>
+                <h4 class="card-title">$240</h4>
+                <div class="platos__btn__container">
+                  <button class="btn__comprar" type="button" data-bs-toggle="modal" data-bs-target="#platoUno">Lo
+                    quiero!</button>
+                </div>
+
+                <!-- Modal 1 -->
+                <div class="modal fade" id="platoUno" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Muchas gracias por tu compra!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="../images/plato_2.jpg" alt="tarta tricolor con verduras"
+                class="platos card-img-top card__img__platos">
+              <div class="card-body">
+                <h4 class="card-title">Tarta tricolor con ensalada a elección</h4>
+                <h4 class="card-title">$299</h4>
+                <div class="platos__btn__container">
+                  <button class="btn__comprar" type="button" data-bs-toggle="modal" data-bs-target="#platoDos">Lo
+                    quiero!</button>
+                </div>
+
+                <!-- Modal 2 -->
+                <div class="modal fade" id="platoDos" tabindex="-1" aria-labelledby="exampleModalLabelDos"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Muchas gracias por tu compra!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="../images/plato_3.jpg" alt="Fideos con verduras" class="platos card-img-top card__img__platos">
+              <div class="card-body">
+                <h4 class="card-title">Fideos integrales con verduras salteadas</h4>
+                <h4 class="card-title">$350</h4>
+                <div class="platos__btn__container">
+                  <button class="btn__comprar" type="button" data-bs-toggle="modal" data-bs-target="#platoTres">Lo
+                    quiero!</button>
+                </div>
+                <!-- Modal  3 -->
+                <div class="modal fade" id="platoTres" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Muchas gracias por tu compra!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="../images/plato_4.jpg" alt="" class="platos card-img-top card__img__platos">
+              <div class="card-body">
+                <h4 class="card-title">Tarta de calabaza con guarnición</h4>
+                <h4 class="card-title">$450</h4>
+                <div class="platos__btn__container">
+                  <button class="btn__comprar" type="button" data-bs-toggle="modal" data-bs-target="#platoCuatro">Lo
+                    quiero!</button>
+                </div>
+
+                <!-- Modal 4 -->
+                <div class="modal fade" id="platoCuatro" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Muchas gracias por tu compra!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="../images/plato_5.jpg" alt="Milanesa con verduras"
+                class="platos card-img-top card__img__platos">
+              <div class="card-body">
+                <h4 class="card-title">Milanesa de soja con ensalada</h4>
+                <h4 class="card-title">$400</h4>
+                <div class="platos__btn__container">
+                  <button class="btn__comprar" type="button" data-bs-toggle="modal" data-bs-target="#platoCinco">Lo
+                    quiero!</button>
+                </div>
+                <!-- Modal 5 -->
+                <div class="modal fade" id="platoCinco" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Muchas gracias por tu compra!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="../images/plato_6.jpg" alt="Salteado de verduras con carne"
+                class="platos card-img-top card__img__platos">
+              <div class="card-body">
+                <h4 class="card-title">Salteado de verduras y carne</h4>
+                <h4 class="card-title">$500</h4>
+                <div class="platos__btn__container">
+                  <button class="btn__comprar" type="button" data-bs-toggle="modal" data-bs-target="#platoSeis">Lo
+                    quiero!</button>
+                </div>
+                <!-- Modal 6 -->
+                <div class="modal fade" id="platoSeis" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Muchas gracias por tu compra!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="../images/plato_7.jpg" alt="Pastel de calabaza y lentejas"
+                class="platos card-img-top card__img__platos">
+              <div class="card-body">
+                <h4 class="card-title">Pastel de calabaza y lentejas</h4>
+                <h4 class="card-title">$550</h4>
+                <div class="platos__btn__container">
+                  <button class="btn__comprar" type="button" data-bs-toggle="modal" data-bs-target="#platoSiete">Lo
+                    quiero!</button>
+                </div>
+
+                <!-- Modal 7 -->
+                <div class="modal fade" id="platoSiete" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Muchas gracias por tu compra!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="../images/plato_8.jpg" alt="Estofado de carne" class="platos card-img-top card__img__platos">
+              <div class="card-body">
+                <h4 class="card-title">Estofado de carne con guarnición</h4>
+                <h4 class="card-title">$490</h4>
+                <div class="platos__btn__container">
+                  <button class="btn__comprar" type="button" data-bs-toggle="modal" data-bs-target="#platoOcho">Lo
+                    quiero!</button>
+                </div>
+
+                <!-- Modal 8 -->
+                <div class="modal fade" id="platoOcho" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Muchas gracias por tu compra!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--FIN DE LA CLASE ROW-->
+        </div>
+        <!--FIN DE LA CLASE CONTAINER-->
+      </div>
+    </div>
+  </main>
+
+  <aside>
+    <div class="iconos__container">
+      <div>
+        <a href="#header"><img class="iconos__wspYFlecha" src="../images/small-images/flecha_arriba_subir.png"
+            alt="flecha arriba" /></a>
+      </div>
+      <div class="container__btn__wsp">
+        <a href="https://api.whatsapp.com/send?phone=11111111" target="about_blanck">
+          <img class="btn-wsp" src="../images/whatsapp_logo.png" alt="whatsApp logo" />
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="bg--brown">
+    <!----------------------INICIO DEL CONTENEDOR GRID  DEL FOOTER------->
+    <div class="footer__container">
+      <section>
+        <div class="footer__tarjeta">
+          <div class="footer__logo">
+            <a href="../index.html">
+              <img class="footer__tarjeta--logo footer__logo" src="../images/logo.png"
+                alt=" logo de corazon de frutas y verduras" />
+            </a>
+          </div>
+          <div class="footer__tarjeta--descripcion tarjeta__contacto">
+            <ul>
+              <li>Dirección: Av. Siempreviva 123; Bs. As - Argentina</li>
+              <li>Horarios: 11 a 15 hs y de 19 a 23 hs.</li>
+              <li>Tel.: +54 111 222 444</li>
+              <li>E-Mail: viandasGaia@fakemail.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div>
+        <nav class="footer__nav">
+          <ul>
+            <li>
+              <a id="link__naranja__footer" href="../index.html">Home</a>
+            </li>
+            <li>
+              <a id="link__naranja__footer" href="./menu.html">Nuestro menú</a>
+            </li>
+            <li>
+              <a id="link__naranja__footer" href="./preguntas_frecuentes.html">Preguntas frecuentes</a>
+            </li>
+            <li>
+              <a id="link__naranja__footer" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <a id="link__naranja__footer" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <article class="newsletter">
+          <h4 class="newsletter__titulo">¿Qué hay de nuevo? ¡Descubrilo!</h4>
+          <input class="newsletter__footer__input" type="text" name="newsletter" id="newsletter"
+            placeholder="Escribí tu mail aquí" required />
+
+          <div class=" btn__footer__container">
+            <div class="footer__redes__logos">
+              <a href="https://www.instagram.com" target="about_blanck"><img src="../images/small-images/instagram.svg"
+                  class="logo__instagram__footer" alt="Instagram logo" /></a>
+              <a href="https://www.facebook.com" target="about_blanck"><img src="../images/small-images/facebook.svg"
+                  class="logo__fb__footer" alt="Facebook logo" /></a>
+            </div>
+            <button class="btn__enviar__footer" type="button" data-bs-toggle="modal"
+              data-bs-target="#btn__footer__newsletter">Enviar</button>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="btn__footer__newsletter" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Muchas gracias por suscribirte!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </article>
+      </div>
+      <!-----------------------FIN DEL CONTENEDOR GRID DEL FOOTER-------->
+  </footer>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

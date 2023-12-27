@@ -1,0 +1,1247 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+header nav .navbar-nav {
+  background-color: yellowgreen;
+}
+header nav ul a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: cursive;
+  padding: 0.5rem;
+  margin-left: 2rem;
+}
+header nav ul a#link__naranja {
+  color: #000;
+}
+header nav ul a#link__naranja:hover {
+  color: #ff4500;
+}
+header nav .header__logo {
+  height: 20rem;
+  width: auto;
+  justify-content: flex-start;
+  margin-right: 5rem;
+}
+header nav .header__logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*.....................TIPOGRAFÍA GENERAL APLICADA EN EL INDEX........................*/
+p {
+  font: "Indie Flower";
+}
+
+a {
+  font: "cursive";
+}
+
+.portada__titulo {
+  text-align: center;
+  font-size: 15rem;
+  font-style: "Roboto";
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  color: #221e19;
+}
+
+.info__contacto__descripcion {
+  font-size: 2rem;
+  font-family: "cursive";
+  text-align: center;
+  padding: 2.5rem;
+}
+
+h1 {
+  font-family: "Indie Flower";
+}
+
+.box {
+  font-family: "Indie Flower";
+}
+
+.parrafos, .parrafo__historia, .parrafo__preguntas__frec__descripcion, .parrafo__menu, .parrafo__form, .parrafo__form__encabezado, .parrafo__descripcion {
+  line-height: 3rem;
+  font-size: 2rem;
+  font-family: "Indie Flower";
+  text-align: center;
+  background-color: #ffa500;
+  width: 100%;
+  margin: auto;
+}
+
+.parrafo__descripcion, .parrafo__form__encabezado {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  padding: 45px;
+}
+
+.subtitulo__principal {
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.subtitulos__especiales {
+  font-family: "cursive";
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.aside__titulo {
+  font-family: "Roboto";
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.aside__descripcion {
+  font-family: "Indie Flower";
+  font-size: 3rem;
+  text-align: center;
+  line-height: 3.5rem;
+  margin-bottom: 3rem;
+  margin-left: 3.2rem;
+}
+
+.parrafo__form {
+  font-family: "Indie Flower";
+  background-color: #fff;
+}
+
+/*.....................TIPOGRAFÍA NUESTRO MENU........................*/
+.parrafo__menu {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5rem;
+  padding: 45px;
+  font-size: 2rem;
+}
+
+/*.............. TIPOGRAFÍA PREGUNTAS FRECUENTES................*/
+.parrafo__preguntas__frec__descripcion {
+  width: 100%;
+  height: auto;
+  margin-top: 5rem;
+  margin-left: 1%;
+  padding: 45px;
+  font-size: 2rem;
+}
+
+.fuente__preguntas {
+  color: #000;
+  font-family: "Indie Flower";
+  font-size: 3rem;
+}
+
+.parrafo__respuestas {
+  line-height: 3rem;
+  font-size: 2rem;
+  font-family: "Indie Flower";
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/*.................... TIPOGRAFÍA NOSOTROS.................................*/
+.subtitulo__historia {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+.parrafo__historia {
+  height: auto;
+  padding: 45px;
+}
+
+.bg--orange {
+  background-color: #ffa500;
+}
+
+.bg--darkOrange {
+  background-color: #ff4500;
+}
+
+.bg--brown {
+  background-color: #523024;
+}
+
+/*--------------------------------------------INDEX: PORTADA-----------------------------------------------------*/
+.row__portada__index {
+  max-width: 100%;
+  margin: auto;
+}
+
+.portada__container, .portada__contacto, .portada__nosotros, .portada__preguntas, .portada__menu, .portada__index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-color: orange;
+  height: 500px;
+  font-size: 50px;
+  font-weight: 30px;
+  margin-bottom: 5rem;
+}
+
+.portada__index {
+  background-image: url("../images/small-images/portada_index.jpg");
+}
+
+.portada__btn__link__al__menu__container {
+  display: flex;
+  height: 500px;
+}
+
+a#link__al__menu__especial {
+  align-self: center;
+}
+
+.btn__menu {
+  margin: auto;
+}
+
+/*............................ANIMACIÓN TÍTULOS PORTADA INDEX........................*/
+.banner__text {
+  transform: translate(-5%, -5%);
+}
+.banner__text h1 {
+  text-align: center;
+  font-size: 10rem;
+}
+
+/*..........................CLASE BOX PARA ANIMACION DE PORTADA DEL INDEX..................*/
+.box {
+  font-size: 5rem;
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+
+.b1 {
+  animation: animUno 15s infinite;
+}
+
+.b2 {
+  animation: animDos 15s infinite;
+}
+
+.b3 {
+  animation: animTres 15s infinite;
+}
+
+.b4 {
+  animation: animCuatro 15s infinite;
+}
+
+@keyframes animUno {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+@keyframes animDos {
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+@keyframes animTres {
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+@keyframes animCuatro {
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+@keyframes animCinco {
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*------------------------INDEX: SOLUCION DE LA EMPRESA----------------*/
+.propuesta__container__grid {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.propuesta__container__grid .solucion__image__container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-left: 1rem;
+}
+.propuesta__container__grid .solucion__image__container img {
+  height: auto;
+  width: 100%;
+}
+.propuesta__container__grid .solucion__descripcion__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+.propuesta__container__grid .solucion__descripcion__container .solucion__descripcion {
+  padding: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  margin-left: 2.5rem;
+  margin-right: 2rem;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-family: "Indie Flower";
+  text-align: center;
+  background-color: #ffa500;
+}
+.propuesta__container__grid .solucion__descripcion__container .aside {
+  background-color: #ff4500;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-left: 2.5rem;
+  padding: 2rem;
+}
+.propuesta__container__grid .solucion__descripcion__container .aside .aside__descripcion {
+  font-family: "Indie Flower";
+  font-size: 3rem;
+  text-align: center;
+  line-height: 3.5rem;
+  margin-bottom: 3rem;
+  margin-left: 3.2rem;
+}
+
+/*------------------------INDEX: MAIN (VALORES DE LA EMPRESA)----------------*/
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rem;
+}
+
+.grid__main__container {
+  display: grid;
+  grid-template-areas: "comidaUno comidaDos comidaTres" "cualidadUno cualidadDos cualidadTres" "textoUno textoDos textoTres";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+  max-width: 1450px;
+}
+.grid__main__container .articulo__en__columnas__container {
+  display: flex;
+  flex-direction: column;
+}
+.grid__main__container .articulo__en__columnas__container .img__redonda__container {
+  display: flex;
+  justify-content: center;
+}
+.grid__main__container .articulo__en__columnas__container .img__redonda__container .img__redonda {
+  height: auto;
+  max-width: 100%;
+  border-radius: 80%;
+  margin-bottom: 4rem;
+}
+.grid__main__container .articulo__en__columnas__container .texto__en__columnas__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.comidaUno {
+  grid-area: comidaUno;
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.comidaDos {
+  grid-area: comidaDos;
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.comidaTres {
+  grid-area: comidaTres;
+  grid-column: auto;
+  grid-row: auto;
+}
+
+/*...............................INDEX: FORMULARIO DE CONTACTO...........................*/
+.contacto__container {
+  text-align: center;
+  margin: 50px;
+  padding: 30px;
+  border: solid 1px #000;
+  background-color: #ff4500;
+  border-radius: 4px;
+}
+.contacto__container form .campo {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 2.5rem;
+}
+.contacto__container form .campo#consulta {
+  height: 30rem;
+}
+
+.modal-header {
+  background-color: orange;
+  border-bottom: none;
+}
+
+.modal-body {
+  font-size: 3rem;
+  font-family: "Indie Flower";
+  text-align: center;
+  color: #000;
+  background-color: #ffa500;
+}
+
+.modal-footer {
+  background-color: #ffa500;
+  border-top: none;
+}
+
+/*............................... INDEX: MEDIOS DE PAGO...........................*/
+.pagos__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-position: center;
+  background-color: #ffa500;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding: 3%;
+}
+.pagos__container img {
+  height: auto;
+  max-width: 90%;
+}
+.pagos__container img .img-fluid {
+  height: 100%;
+  width: auto;
+  margin-top: 25;
+  margin-bottom: 0.5%;
+}
+
+/*............................... INDEX: WHATSAPP Y FLECHA PARA SUBIR...........................*/
+.iconos__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #ffa500;
+  margin: auto;
+}
+.iconos__container .iconos__wspYFlecha {
+  max-width: 100px;
+  height: 50%;
+}
+
+/*.....................................MEDIAS QUERIES INDEX : CELULARES...............*/
+@media only screen and (max-width: 599px) {
+  header nav .container-fluid {
+    background-color: greenyellow;
+  }
+  header nav .container-fluid header nav li a {
+    display: none;
+  }
+  header nav .container-fluid .navbar-toggler-icon {
+    padding: 40px;
+  }
+  header nav .container-fluid .header__nav--carrito {
+    display: none;
+  }
+  .portada__titulo { /*CLASE NO USADA EN EL INDEX PERO SÍ EN LAS OTRAS PORTADAS */
+    font-size: 7rem;
+  }
+  .portada__index {
+    height: 100%;
+  }
+  .banner__text h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 3.5rem;
+    color: #000;
+  }
+  .portada__btn__link__al__menu__container {
+    height: auto;
+  }
+  .portada__btn__link__al__menu__container .btn__menu {
+    max-width: 200px;
+    margin-left: 2rem;
+    margin-top: 5rem;
+  }
+  .info__contacto__descripcion,
+  .subtitulo__principal,
+  .propuesta__container__grid,
+  .animUno,
+  .animDos,
+  .animTres,
+  .animCuatro,
+  .subtitulo__principal__uno,
+  .solucion__image__container,
+  .solucion__descripcion,
+  .aside {
+    display: none;
+  }
+  .subtitulo__principal {
+    font-size: 5rem;
+  }
+  .grid__main__container {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "comidaUno" "comidaDos" "comidaTres";
+    max-width: 599px;
+    margin-top: 5rem;
+  }
+  .subtitulos__especiales {
+    font-size: 5rem;
+  }
+  .parrafo__descripcion, .parrafo__form__encabezado {
+    font-size: 3rem;
+  }
+  .btn__menu {
+    font-size: 3rem;
+  }
+  .btn__menu#btn__menu__main {
+    width: 50%;
+    height: 15rem;
+  }
+  .contacto__container {
+    margin: 5%;
+  }
+  .contacto__container .parrafo__form__encabezado {
+    display: none;
+  }
+  .contacto__container form .campo {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .contacto__container form textarea {
+    max-height: 320px;
+  }
+  .pagos__container {
+    margin-top: 5rem;
+  }
+  .container__btn__wsp,
+  .btn__wsp {
+    display: none;
+  }
+}
+/*.....................................MEDIAS QUERIES INDEX: TABLETS...............*/
+@media only screen and (min-width: 768px) {
+  nav {
+    width: 100%;
+  }
+  nav .navbar-toggler-icon {
+    background-color: #ffa500;
+    padding: 2.3rem;
+  }
+  .banner__text h1 {
+    font-size: 8rem;
+    color: #000;
+  }
+  .propuesta__container__grid {
+    grid-template-columns: 3, 1fr;
+    grid-area: "solucion__descripcion__grid" "aside__grid";
+  }
+  .pagos__container .container {
+    width: auto;
+  }
+}
+/*...........................................INICIO PORTADA PAGINA MENU..............................*/
+.portada__menu {
+  background-image: url("../images/viandas_calabaza.jpg");
+}
+
+/*..................................... .....PAGINA NUESTRO MENÚ........................................................*/
+.articulo__menu__container {
+  margin-right: 4rem;
+  margin-left: 2rem;
+}
+
+main #galeria img {
+  width: 100%;
+  height: 250px;
+}
+main .card .platos {
+  height: 240px;
+  width: 100%;
+  margin-top: 1rem;
+}
+main .card .card__img__platos:hover {
+  transform: scale(1.1);
+}
+main .card-title {
+  text-align: center;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/*..............................................NUESTRO MENU: MEDIAS QUERIES...................*/
+@media only screen and (max-width: 599px) {
+  .portada__menu {
+    height: 100%;
+  }
+  .parrafo__menu {
+    font-size: 3rem;
+  }
+  .btn__comprar {
+    width: 100%;
+    font-size: 3rem;
+  }
+}
+/*...........................................PORTADA PAGINA PREGUNTAS FREC..............................*/
+.portada__preguntas {
+  background-image: url("../images/viandas_empresariales.jpg");
+}
+
+/*.....................................PAGINA PREGUNTAS FRECUENTES........................................................*/
+.funcionamiento__parent__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-top: 3%;
+}
+
+.funcionamiento__container {
+  display: grid;
+  grid-template-areas: "subtitulo__principal" "imgUno imgDos imgTres" "tituloUno tituloDos tituloTres" "descripUno descripDos descripTres";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+}
+
+.funcionamiento__articulo__container {
+  overflow: hidden;
+}
+.funcionamiento__articulo__container .img__propiedades {
+  height: 300px;
+  width: 100%;
+  margin-top: 2px;
+}
+.funcionamiento__articulo__container .imgUno {
+  grid-area: imgUno;
+  grid-row: auto;
+  grid-column: auto;
+}
+.funcionamiento__articulo__container .imgDos {
+  grid-area: imgDos;
+  grid-row: auto;
+  grid-column: auto;
+}
+.funcionamiento__articulo__container .imgTres {
+  grid-area: imgTres;
+  grid-row: auto;
+  grid-column: auto;
+}
+.funcionamiento__articulo__container .card-title .tituloUno {
+  grid-area: tituloUno;
+  grid-row: auto;
+  grid-column: auto;
+}
+.funcionamiento__articulo__container .card-title .tituloDos {
+  grid-area: tituloDos;
+  grid-row: auto;
+  grid-column: auto;
+}
+.funcionamiento__articulo__container .card-title .tituloTres {
+  grid-area: tituloTres;
+  grid-row: auto;
+  grid-column: auto;
+}
+.funcionamiento__articulo__container .card-text .descripUno {
+  grid-area: descripUno;
+  grid-row: auto;
+  grid-column: auto;
+}
+.funcionamiento__articulo__container .card-text .descripDos {
+  grid-area: descripDos;
+  grid-row: auto;
+  grid-column: auto;
+}
+.funcionamiento__articulo__container .card-text .descripTres {
+  grid-area: descripTres;
+  grid-row: auto;
+  grid-column: auto;
+}
+
+/*......................  CONTAINER PREGUNTAS..................................*/
+.preguntas__container__principal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.preguntas__container__principal .preguntas__elementos {
+  padding: 0;
+  background-color: #ff4500;
+  padding: 60px 55px;
+  margin-bottom: 5rem;
+}
+
+.preguntas__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+  max-width: 1800px;
+  background-color: #ffa500;
+  padding: 5rem;
+}
+.preguntas__container .preguntas__articulo {
+  margin-left: 10px;
+}
+.preguntas__container .preguntas__articulo h3 {
+  display: flex;
+  justify-content: center;
+}
+
+/*...................... PREGUNTAS FRECUENTES: MEDIAS QUERIES CELULARES..................................*/
+@media only screen and (max-width: 599px) {
+  .portada__preguntas {
+    height: 100%;
+  }
+  main .funcionamiento__container {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "imgUno" "imgDos" "imgTres";
+    margin-bottom: 3rem;
+  }
+  main .preguntas__container {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+  }
+}
+/*...........................................PORTADA PAGINA NOSOTROS..............................*/
+.portada__nosotros {
+  background-image: url("../images/plato_7.jpg");
+}
+
+/*............................................PAGINA NOSOTROS........................................................*/
+.parent__container__nosotros {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+/*.................. NOSOTROS: INICIO PRIMER CONTAINER CON IMG Y TEXTO HISTORIA DE LA EMPRESA........................*/
+.historia__container__uno {
+  display: flex;
+  flex-direction: row;
+}
+
+.historia__container__subtitulo__uno {
+  display: flex;
+  background-color: #fff;
+  margin-left: 15%;
+  justify-content: start;
+}
+
+.historia__container__texto {
+  display: flex;
+  flex-direction: column;
+  background-color: #523024;
+  max-width: 50%;
+}
+
+.parrafo__historia {
+  margin: auto;
+}
+
+.img__historia__container__uno {
+  display: flex;
+  width: 100%;
+  background-color: #ff4500;
+}
+
+.img__historia {
+  width: 100%;
+  height: auto;
+}
+
+/*..................NOSOTROS: INICIO SEGUNDO CONTAINER CON IMG Y TEXTO HISTORIA DE LA EMPRESA........................*/
+.historia__container__dos {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.historia__container__subtitulo__dos {
+  display: flex;
+  background-color: #fff;
+  justify-content: flex-end;
+  margin-right: 20%;
+}
+
+.img__historia__container__dos {
+  display: flex;
+  width: 100%;
+  background-color: #ff4500;
+}
+
+/*..................NOSOTROS: INICIO TERCER CONTAINER CON IMG Y TEXTO HISTORIA DE LA EMPRESA........................*/
+.historia__container__subtitulo__tres {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.historia__container__tres {
+  display: flex;
+  flex-direction: row;
+}
+
+.img__historia__container__tres {
+  display: flex;
+  width: 100%;
+  background-color: #ff4500;
+}
+
+.historia__container__tres__texto {
+  display: flex;
+  flex-direction: column;
+  background-color: #523024;
+  max-width: 50%;
+}
+
+/*..................................... NOSOTROS: MEDIAS QUERIES CELULARES..............................................*/
+@media only screen and (max-width: 599px) {
+  .portada__nosotros {
+    height: 100%;
+  }
+  .historia__container__uno {
+    flex-direction: column;
+  }
+  .historia__container__texto {
+    max-width: 100%;
+  }
+  .historia__container__texto .historia__container__subtitulo__uno {
+    margin-bottom: 3rem;
+  }
+  .img__historia__container__uno {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .historia__container__dos {
+    flex-direction: column;
+  }
+  .historia__container__dos .historia__container__subtitulo__dos {
+    margin-bottom: 3rem;
+  }
+  .historia__container__dos .img__historia__container__dos {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .historia__container__tres {
+    flex-direction: column;
+  }
+  .historia__container__tres .img__historia__container__tres {
+    margin-bottom: 3rem;
+  }
+  .historia__container__tres__texto {
+    max-width: 100%;
+  }
+  .parrafo__historia {
+    font-size: 3rem;
+  }
+}
+/*...........................................PORTADA PAGINA CONTACTO..............................*/
+.portada__contacto {
+  background-image: url("../images/small-images/viandas_varias.jpg");
+}
+
+/*..................................... PAGINA CONTACTO........................................................*/
+.redes__sociales__logos__container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo__instagram, .redes__sociales__contenedor__padre .redes__sociales__logos__container__logos .logo__instagram__main {
+  height: 5rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.logo__facebook, .redes__sociales__contenedor__padre .redes__sociales__logos__container__logos .logo__facebook__main {
+  height: 5rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+form .campo {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 2.5rem;
+}
+form .campo#mensaje {
+  height: 30rem;
+}
+
+.mapa__container {
+  display: flex;
+  justify-content: center;
+  max-width: 300%;
+}
+
+.mapa {
+  width: 100%;
+  margin: 50px;
+}
+
+.redes__sociales__contenedor__padre {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.redes__sociales__contenedor__padre .redes__sociales__logos__container__logos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.redes__sociales__contenedor__padre .redes__sociales__logos__container__logos .logo__instagram__main {
+  height: 10rem;
+}
+.redes__sociales__contenedor__padre .redes__sociales__logos__container__logos .logo__facebook__main {
+  height: 10rem;
+}
+.redes__sociales__contenedor__padre .redes__sociales__contenedor__padre div {
+  justify-content: center;
+}
+
+/*..................................... CONTACTO: MEDIAS QUERIES CELULARES..........................................*/
+@media only screen and (max-width: 599px) {
+  .portada__contacto {
+    height: 100%;
+  }
+  .parrafo__form {
+    display: none;
+  }
+  .campo {
+    width: 100%;
+  }
+  .btn__seguir {
+    font-size: 2rem;
+    width: 30%;
+  }
+}
+/*......................WHATSAPP ANIMACIÓN...................*/
+.container__btn__wsp {
+  background-color: #008000;
+  border: 1px solid #fff;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 25px;
+  transition: ease 0.3s;
+  animation: anim-wsp 1.2s infinite;
+}
+
+.container__btn__wsp:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.btn-wsp {
+  width: 50px;
+  transition: ease 1s;
+}
+
+@keyframes anim-wsp {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
+footer {
+  background-color: #523024;
+  color: #fff;
+  padding: 1rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-areas: "tarjeta nav__footer newsletter btn";
+  grid-template-columns: 30% 30% 30% 30%;
+  justify-content: flex-start;
+  align-content: flex-end;
+  font-size: 1.5rem;
+}
+
+.footer__tarjeta {
+  font-size: 1.5rem;
+  font-family: cursive;
+  text-align: left;
+  grid-area: tarjeta;
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.footer__tarjeta--logo {
+  max-height: 10rem;
+  width: auto;
+}
+
+.footer__nav {
+  display: flex;
+  grid-column: auto;
+  grid-row: auto;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  grid-area: nav__footer;
+  margin-top: 2rem;
+  margin-right: 5rem;
+}
+
+.footer__nav a {
+  text-align: center;
+  font-size: 2rem;
+  font-family: cursive;
+  color: #fff;
+  text-decoration: none;
+}
+.footer__nav a#link__naranja__footer:hover {
+  color: #ff4500;
+}
+
+.footer__nav li {
+  font-size: 1rem;
+}
+
+.btn__footer__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  grid-column: auto;
+  grid-row: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  font-size: 3rem;
+  grid-area: newsletter;
+}
+
+.newsletter__titulo {
+  margin-bottom: 2rem;
+  font-family: "cursive";
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter__footer__input {
+  font-family: "Indie Flower";
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.modal-header {
+  background-color: orange;
+  border-bottom: none;
+}
+
+.modal-body {
+  font-size: 3rem;
+  font-family: "Indie Flower";
+  text-align: center;
+  color: #000;
+  background-color: #ffa500;
+}
+
+.modal-footer {
+  background-color: #ffa500;
+  border-top: none;
+}
+
+.footer__redes__logos {
+  display: flex;
+}
+.footer__redes__logos .logo__instagram__footer {
+  height: 5rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+.footer__redes__logos .logo__fb__footer {
+  height: 5rem;
+  margin-top: 2rem;
+}
+
+/*.....................................MEDIAS QUERIES INDEX: CELULARES...............*/
+@media only screen and (max-width: 599px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "tarjeta__contacto" "footer__logo";
+  }
+  .tarjeta__contacto {
+    font-size: 2rem;
+  }
+  .footer__logo {
+    grid-area: footer__logo;
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .footer__nav,
+  .newsletter__titulo,
+  .newsletter__footer__input,
+  .logo__instagram__footer,
+  .logo__fb__footer,
+  .btn__enviar__footer,
+  .footer__redes__logos {
+    display: none;
+  }
+}
+/*...........................................BOTONES ESTILOS..............................*/
+.btn__base, .btn__enviar__footer, .btn__seguir, .btn__comprar, #btn-link-preguntas, #btn__menu__main, .btn__menu {
+  font-family: "Roboto";
+  color: whitesmoke;
+  background-color: #699019;
+  border-radius: 10px;
+}
+
+.btn__base:hover, .btn__enviar__footer:hover, .btn__seguir:hover, .btn__comprar:hover, #btn-link-preguntas:hover, #btn__menu__main:hover, .btn__menu:hover {
+  color: orangered;
+  background-color: #ffa500;
+  cursor: pointer;
+}
+
+.btn__menu {
+  width: 250px;
+  height: 65px;
+  margin-left: 5rem;
+  font-size: 3rem;
+}
+
+#btn__menu__main {
+  width: 100%;
+}
+
+#btn-link-preguntas {
+  width: 230px;
+  height: 50px;
+  font-size: 2rem;
+  text-align: center;
+  align-content: center;
+}
+
+.btn__form {
+  padding: 2rem;
+  color: #fff;
+  background-color: #2c2727;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.btn__comprar {
+  width: 100%;
+  height: 6.5rem;
+  font-size: 3rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-secondary {
+  background-color: #2c2727;
+}
+
+.btn__seguir {
+  width: 20%;
+  height: 50%;
+  font-size: 2rem;
+  display: flex;
+  margin-left: 40%;
+  justify-content: center;
+  margin-bottom: 3%;
+  padding: 1.5rem;
+}
+
+.btn__enviar__footer {
+  width: 55%;
+  height: 20%;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 1.5rem;
+  grid-area: btn;
+  margin-left: 5rem;
+  grid-column: auto;
+  grid-row: auto;
+}/*# sourceMappingURL=main.css.map */

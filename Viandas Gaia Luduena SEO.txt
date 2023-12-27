@@ -1,0 +1,25 @@
+﻿Viandas Gaia Ludueña
+
+
+Métodos SEO
+
+
+1) Añadidas etiquetas meta Description y keywords en todas las secciones. Cada una con un resumen del contenido de la página y palabras clave.
+
+
+Descripcion: en la descripción de cada sección usé el nombre de la empresa al principio.
+
+
+Palabras Clave: dependiendo la sección usé palabras clave relacionadas al contenido del cual habla dicha sección. Ej: en Contacto usé “quejas, reclamos, problemas, cambiar pedido, cancelar pedido”, etc.
+
+
+2) Agregado alt al logo de la empresa en el header y footer de todas las secciones
+
+
+3) Optimicé las img reduciendo la calidad de img a un 50% en la mayoría de los casos mediante ResizeImage.net
+
+
+4) Minimizados nombres de los colores negro y blanco en cada archivo sass
+
+
+5) Encabezado: usada en cada sección una etiqueta h1 con el nombre de la misma. Ej: Contacto

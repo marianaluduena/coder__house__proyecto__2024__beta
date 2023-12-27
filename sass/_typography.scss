@@ -1,0 +1,162 @@
+$main-font-family:"Indie Flower";
+$special-font-family:"cursive";
+$subtitulos-font-family:"Roboto";
+$placeholder-font-size: "2rem";
+
+/*.....................TIPOGRAFÍA GENERAL APLICADA EN EL INDEX........................*/
+
+p {
+    font: $main-font-family;
+}
+
+a {
+    font: $special-font-family;
+}
+
+$datos-de-contacto-header:(fuenteTam: 2rem,
+    fuenteFamilia: $special-font-family,
+);
+
+.portada__titulo {
+    text-align: center;
+    font-size: 15rem;
+    font-style: "Roboto";
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    color: #221e19;
+}
+
+.info__contacto__descripcion {
+    font-size: map-get($datos-de-contacto-header, fuenteTam);
+    font-family: $special-font-family;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+h1 {
+    font-family: $main-font-family;
+}
+
+$caja-titulos-anim-index:(
+    fuenteTam: 5rem,
+    
+);
+
+.box{
+    
+    font-family: $main-font-family;
+}
+
+.parrafos {
+    line-height: 3rem;
+    font-size: 2rem;
+    font-family: $main-font-family;
+    text-align: center;
+    background-color: #ffa500;
+    width: 100%;
+    margin: auto;
+}
+
+.parrafo__descripcion {
+    @extend .parrafos;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    padding: 45px;
+}
+
+.subtitulo__principal {
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.subtitulos__especiales {
+    font-family: $special-font-family;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.aside__titulo {
+    font-family: $subtitulos-font-family;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.aside__descripcion {
+    font-family: $main-font-family;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3.5rem;
+    margin-bottom: 3rem;
+    margin-left: 3.2rem;
+}
+
+.parrafo__form__encabezado {
+    @extend .parrafos;
+    @extend .parrafo__descripcion;
+}
+
+.parrafo__form {
+    @extend .parrafos;
+    font-family: $main-font-family;
+    background-color: #fff;
+}
+
+/*.....................TIPOGRAFÍA NUESTRO MENU........................*/
+.parrafo__menu {
+    @extend .parrafos;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 5rem;
+    padding: 45px;
+    font-size: 2rem;
+}
+
+/*.............. TIPOGRAFÍA PREGUNTAS FRECUENTES................*/
+
+.parrafo__preguntas__frec__descripcion {
+    @extend .parrafos;
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    margin-left: 1%;
+    padding: 45px;
+    font-size: 2rem;
+}
+
+$botones-acordeon-preguntas:(
+    colorFuente: #000,
+    fuenteTam: 3rem,
+    font-family: $main-font-family,
+);
+
+.fuente__preguntas {
+    color: map-get($botones-acordeon-preguntas, colorFuente);
+    font-family: map-get($botones-acordeon-preguntas, font-family);
+    font-size: map-get($botones-acordeon-preguntas, fuenteTam);
+}
+
+.parrafo__respuestas {
+    line-height: 3rem;
+    font-size: 2rem;
+    font-family: $main-font-family;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/*.................... TIPOGRAFÍA NOSOTROS.................................*/
+.subtitulo__historia {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.parrafo__historia{
+    @extend .parrafos;
+    height: auto;
+    padding: 45px;
+}

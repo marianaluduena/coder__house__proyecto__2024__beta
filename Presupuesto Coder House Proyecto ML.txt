@@ -1,0 +1,80 @@
+
+Presupuesto Desarollo Web 
+
+Nombre                           Fecha                  Nº de proyecto        Válido hasta
+
+Viandas Gaia SRL               20/11/2021                     007                01/12/2021
+
+
+Servicio        Descripción                                            Horas             Precio total (Pesos arg) 
+
+  1             Armado del wireframe de 5 (cinco) secciones              5 hs             3.000       
+
+  2             Maquetación de todo el sitio                            20 hs             20.000  
+
+  3             Desarrollo  de todo el sitio                            60 hs             70.000
+
+  4             Posicionamiento SEO                                      5 hs             10.000
+
+  5             Subida al servidor y hostig                              1 hs             3.500
+
+  6             Seguridad                                                                 5.000 
+ ...................................................................................................
+                                                                       Sub Total          111.500
+                                                                       ..........................                                           
+                                                                       IVA (21%)          23.415
+                                                                      ...........................    
+                                                                       TOTAL en pesos    $ 134.915
+
+
+
+Términos y condiciones: 
+
+- El pago se realizará 50% al comienzo del proyecto y el 50% al finalizarlo a través de transferencia bancaria o Mercado Pago.
+
+- Aprobado el presupuesto, el mismo tomará el carácter de contrato que será firmado por el cliente donde ponga por escrito su conformidad con los servicios
+ descritos.
+
+- Cualquier cambio que el cliente deseé ya siendo desarrollado el sitio se le cobrará un porcentaje que variará según el tiempo que requiera hacer las modificaciones.
+
+Descripción: 
+
+Objetivos y proceso de desarrollo:
+
+- Entrevista: se iniciará el proceso con una entrevista con el cliente para conocer sus necesidades, objetivos y alcance de la página. Será el cliente quien pondrá a disposición los materiales 
+ (imágenes, videos, textos, etc) para añadir a su sitio web.
+
+- Wireframe: se iniciará el proceso de armado del wireframe de todas las secciones. Una vez terminado el cliente podrá aprobarlo y, de ser necesario, pedir modificaciones. Aprobado
+el wireframe, el diseño pasará a ser desarrollado.
+
+- Maquetación y Desarrollo: se desarrollará la maquetación, diseño responsive, hosting, subida al servidor, SEO y servicios básicos de seguridad de una página web que
+ constará de 5 (cinco) secciones. Las mismas serán:
+
+- Home
+- Nuestro menú
+- Preguntas frecuentes
+- Nosotros
+- Contacto
+
+Herramientas y/o tecnologías implementadas en el desarrollo de la web de Viandas Gaia:
+
+- Marvel versión paga (para el desarrollo del wireframe)
+- HTML
+- CSS y SASS
+- Framework: Bootstrap 5
+
+- Hosting: si el cliente no tiene definido un hosting se le ofrecerá el hosting más adecuado según el alcance y tamaño de la página. 
+
+Servicios incluidos:
+
+- Responsive design
+- Optimización para SEO
+- SEO con Google Analitics
+- Subida al servidor y hosting
+- Seguridad básica
+
+No incluye:
+
+- Registro del dominio
+- Renovación de dominio
+- Instalación adicionales de plugglins
