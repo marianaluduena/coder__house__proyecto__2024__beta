@@ -10,21 +10,10 @@ html {
     font-size: 62.5%;
 }
 
-body {
-    margin: 0;
-}
-
-
 header {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
 
     nav {
-        .navbar-nav {
-            background-color: yellowgreen;
-        }
+      
     
         ul {
             
@@ -47,10 +36,8 @@ header {
     
         }
         .header__logo {
-            height: 20rem;
+            height: 100px;
             width: auto;
-            justify-content: flex-start;
-            margin-right: 5rem;
         
             img {
                 max-width: 100%;

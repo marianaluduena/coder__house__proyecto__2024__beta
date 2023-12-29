@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css-bst/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./sass/main.css"/>
+  <link rel="stylesheet" href="./sass/main.css" />
   <link rel="shortcut icon" href="./images/favicon.png" />
   <link
     href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Indie+Flower&family=Rancho&display=swap"
@@ -24,8 +24,8 @@
 </head>
 
 <body>
-  <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <header>
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid ">
         <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" class="header__logo"
             alt="corazon de frutas y verduras" /></a>
@@ -36,7 +36,7 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav">
             <a id="link__naranja" aria-current="page" href="./index.html">Home</a>
             <a id="link__naranja" aria-current="page" href="./paginas/menu.html">Nuestro menu</a>
             <a id="link__naranja" aria-current="page" href="./paginas/preguntas_frecuentes.html">Preguntas
@@ -141,10 +141,11 @@
     </div>
   </section>
 
-  <main>
+  <main class="container">
     <div>
       <h2 class="subtitulo__principal">Lo que nos define</h2>
     </div>
+
 
     <!-- INICIO GRID CONTAINER-->
 
@@ -205,6 +206,89 @@
 
       <!--FIN DEL GRID CONTAINER -->
     </div>
+
+    <!-- Carousel con owl carousel-->
+
+    <div class="container-fluid">
+
+      <h3>Top <span class="text-danger">más vendidos</span></h3>
+
+      <div class="owl-carousel owl-theme">
+
+        <div class="item">
+          <div class="card">
+            <img src="./images/productos/plato_4.jpg" alt="Tarta de calabaza" class="card-img">
+            <div class="card-title">
+              Tarta de calabaza
+            </div>
+            <a href="" class="btn btn-danger">Ver más</a>
+          </div>
+          <!-- Fin item-->
+        </div>
+
+        <div class="item">
+          <div class="card">
+            <img src="./images/productos/plato_5.jpg" alt="Tarta de calabaza" class="card-img">
+            <div class="card-title">
+              Tarta de calabaza
+            </div>
+            <a href="" class="btn btn-danger">Ver más</a>
+          </div>
+          <!-- Fin item-->
+        </div>
+
+        <div class="item">
+          <div class="card">
+            <img src="./images/productos/plato_8.jpg" alt="Tarta de calabaza" class="card-img">
+            <div class="card-title">
+              Tarta de calabaza
+            </div>
+            <a href="" class="btn btn-danger">Ver más</a>
+          </div>
+          <!-- Fin item-->
+        </div>
+
+        <div class="item">
+          <div class="card">
+            <img src="./images/productos/plato_7.jpg" alt="Tarta de calabaza" class="card-img">
+            <div class="card-title">
+              Tarta de calabaza
+            </div>
+            <a href="" class="btn btn-danger">Ver más</a>
+          </div>
+          <!-- Fin item-->
+        </div>
+
+        <div class="item">
+          <div class="card">
+            <img src="./images/productos/plato_2.jpg" alt="Tarta de calabaza" class="card-img">
+            <div class="card-title">
+              Tarta de calabaza
+            </div>
+            <a href="" class="btn btn-danger">Ver más</a>
+          </div>
+          <!-- Fin item-->
+        </div>
+
+        <div class="item">
+          <div class="card">
+            <img src="./images/productos/plato_1.jpg" alt="Tarta de calabaza" class="card-img">
+            <div class="card-title">
+              Tarta de calabaza
+            </div>
+            <a href="" class="btn btn-danger">Ver más</a>
+          </div>
+          <!-- Fin item-->
+        </div>
+
+        <!-- Fin owl carousel-->
+      </div>
+      <!-- Fin container fluid-->
+    </div>
+
+
+
+
     <div class="d-flex justify-content-center w-100">
       <a href="./paginas/menu.html"> <button class="btn__menu" id="btn__menu__main" type="button">Ver
           menú</button></a>
@@ -218,68 +302,61 @@
       con vos a la brevedad!
     </p>
     <form>
-      <!-- 
-      <div>
-        <input class="campo parrafo__form" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre*"
-          required />
-        <input class="campo parrafo__form" type="text" name="apellido" placeholder="Ingresa tu apellido*" required />
-        <input class="campo parrafo__form" type="text" name="mail" placeholder="Ingresa tu email*" required />
+      <div class="row">
 
-      </div>
-      <textarea class="campo parrafo__form" name="consulta" id="consulta" cols="50" rows="20"
-        placeholder="Ingresá tu mensaje"></textarea>
-      <button type="button" class="btn__form" data-bs-toggle="modal" data-bs-target="#btn__formulario">Enviar</button> -->
-
-        <div class="row">
-
-            <div class="col-md-8 col-lg-5">
-                    <img src="./images/recetas__ebook.webp" alt="Libro de recetas saludables" class="img-fluid" width="350px" />
-            </div>
-
-            <div class="col-md-12 col-lg-6 py-lg-5">
-             
-                <div class="my-5">
-                   <!--  <?= (new Alerta())->devolverAlertas() ?> -->
-                </div>
-
-                <div class="p-md-1">
-                    <form class="row g-3 form justify-content-center" method="POST" action="#">
-                        <div class="col-md-6">
-                            <label for="nombre" class="form-label datos">Nombre *</label>
-                            <input type="text" class="form-control my-3 p-3" id="nombre" name="nombre" aria-describedby="nombre" placeholder="Ingresá tu nombre" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="apellido" class="form-label datos">Apellido *</label>
-                            <input type="text" class="form-control my-3 p-3" id="apellido" name="apellido" aria-describedby="apellido" placeholder="Ingresá tu apellido" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="email" class="form-label datos">Email *</label>
-                            <input type="email" class="form-control my-3 p-3" id="email" name="email" aria-describedby="email" placeholder="Ingresá tu email" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="nroTel" class="form-label datos">Teléfono *</label>
-                            <input type="number" class="form-control my-1 p-3" id="nroTel" name="nroTel" aria-describedby="nroTel" placeholder="Número de teléfono" required>
-                        </div>
-                       
-                       
-                        <div class="col-md-12 my-md-5">
-                            <label for="comentarios" class="form-label text-center datos">Dejá un comentario </label>
-                            <div class="container__form__textarea d-flex justify-content-center my-1">
-                                <textarea class="form-control" id="comentarios" name="comentarios" placeholder="Escribí aquí tu consulta o comentario *" rows="3" required></textarea>
-                            </div>
-                        </div>
-
-                        <div class="col-12 py-3">
-                            <button type="submit" class="btn btn__enviar">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            
-            <!-- Fin div class row g-4 py-5 -->
+        <div class="col-md-8 col-lg-5">
+          <img src="./images/recetas__ebook.webp" alt="Libro de recetas saludables" class="img-fluid" width="350px" />
         </div>
 
-        <!-- Fin div class container py-2 -->
+        <div class="col-md-12 col-lg-6 py-lg-5">
+
+          <div class="my-5">
+            <!--  <?= (new Alerta())->devolverAlertas() ?> -->
+          </div>
+
+          <div class="p-md-1">
+            <form class="row g-3 form justify-content-center" method="POST" action="#">
+              <div class="col-md-6">
+                <label for="nombre" class="form-label datos">Nombre *</label>
+                <input type="text" class="form-control my-3 p-3" id="nombre" name="nombre" aria-describedby="nombre"
+                  placeholder="Ingresá tu nombre" required>
+              </div>
+              <div class="col-md-6">
+                <label for="apellido" class="form-label datos">Apellido *</label>
+                <input type="text" class="form-control my-3 p-3" id="apellido" name="apellido"
+                  aria-describedby="apellido" placeholder="Ingresá tu apellido" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label datos">Email *</label>
+                <input type="email" class="form-control my-3 p-3" id="email" name="email" aria-describedby="email"
+                  placeholder="Ingresá tu email" required>
+              </div>
+              <div class="col-md-6">
+                <label for="nroTel" class="form-label datos">Teléfono *</label>
+                <input type="number" class="form-control my-1 p-3" id="nroTel" name="nroTel" aria-describedby="nroTel"
+                  placeholder="Número de teléfono" required>
+              </div>
+
+
+              <div class="col-md-12 my-md-5">
+                <label for="comentarios" class="form-label text-center datos">Dejá un comentario </label>
+                <div class="container__form__textarea d-flex justify-content-center my-1">
+                  <textarea class="form-control" id="comentarios" name="comentarios"
+                    placeholder="Escribí aquí tu consulta o comentario *" rows="3" required></textarea>
+                </div>
+              </div>
+
+              <div class="col-12 py-3">
+                <button type="submit" class="btn btn__enviar">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Fin div class row g-4 py-5 -->
+      </div>
+
+      <!-- Fin div class container py-2 -->
 
     </form>
 
@@ -413,7 +490,41 @@
       </div>
       <!-----------------------FIN DEL CONTENEDOR GRID DEL FOOTER-------->
   </footer>
+
   <script src="./js/bootstrap.min.js"></script>
+
+  <!-- js jquery-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Owl carousel js.min-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Owl carousel init-->
+
+  <script src="./js/app.js"> </script>
+
+  <!-- OWL CAROUSEL LINKS -->
+
+  <!-- Owl carousel min.css-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Owl carousel default.theme.css-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
 </body>
 
 </html>

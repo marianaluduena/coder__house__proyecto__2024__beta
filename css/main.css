@@ -28,10 +28,6 @@ header {
       justify-content: space-around;
 }
 
-header nav .navbar-nav {
-  background-color: yellowgreen;
-}
-
 header nav ul a {
   text-transform: uppercase;
   text-decoration: none;
@@ -89,7 +85,8 @@ a {
 }
 
 h1 {
-  font-family: "Indie Flower";
+  font-family: "Indie Flower", Arial, Helvetica, sans-serif;
+  color: #415716;
 }
 
 .box {
