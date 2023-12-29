@@ -421,8 +421,7 @@ a#link__al__menu__especial {
 /*...............................INDEX: FORMULARIO DE CONTACTO...........................*/
 .contacto__container {
   text-align: center;
-  margin: 50px;
-  padding: 30px;
+  padding: 10px;
   border: solid 1px #000;
   background-color: #ff4500;
   border-radius: 4px;
@@ -436,6 +435,15 @@ a#link__al__menu__especial {
 }
 .contacto__container form .campo#consulta {
   height: 30rem;
+}
+
+.form-label {
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+.form-control {
+  font-size: 15px;
 }
 
 .modal-header {
@@ -1168,14 +1176,14 @@ footer {
   }
 }
 /*...........................................BOTONES ESTILOS..............................*/
-.btn__base, .btn__enviar__footer, .btn__seguir, .btn__comprar, #btn-link-preguntas, #btn__menu__main, .btn__menu {
+.btn__base, .btn__enviar__footer, .btn__seguir, .btn__comprar, .btn__enviar, #btn-link-preguntas, #btn__menu__main, .btn__menu {
   font-family: "Roboto";
   color: whitesmoke;
   background-color: #699019;
   border-radius: 10px;
 }
 
-.btn__base:hover, .btn__enviar__footer:hover, .btn__seguir:hover, .btn__comprar:hover, #btn-link-preguntas:hover, #btn__menu__main:hover, .btn__menu:hover {
+.btn__base:hover, .btn__enviar__footer:hover, .btn__seguir:hover, .btn__comprar:hover, .btn__enviar:hover, #btn-link-preguntas:hover, #btn__menu__main:hover, .btn__menu:hover {
   color: orangered;
   background-color: #ffa500;
   cursor: pointer;
@@ -1200,13 +1208,10 @@ footer {
   align-content: center;
 }
 
-.btn__form {
-  padding: 2rem;
-  color: #fff;
-  background-color: #2c2727;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 2.5rem;
+.btn__enviar {
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
 }
 
 .btn__comprar {

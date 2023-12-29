@@ -230,50 +230,47 @@
         placeholder="Ingresá tu mensaje"></textarea>
       <button type="button" class="btn__form" data-bs-toggle="modal" data-bs-target="#btn__formulario">Enviar</button> -->
 
-      <div class="row justify-content-center">
-        <div class="row g-4 p-2">
+        <div class="row">
 
-            <div class="col-md-8 m-md-auto m-lg-0 col-lg-5">
-                <div class="container">
-                    <img src="./images/recetas__ebook.webp" alt="Libro de recetas saludables" class="img-fluid card-img-top" />
-                </div>
+            <div class="col-md-8 col-lg-5">
+                    <img src="./images/recetas__ebook.webp" alt="Libro de recetas saludables" class="img-fluid" width="350px" />
             </div>
 
-            <div class="col-md-12 col-lg-6 form__contacto m-auto">
+            <div class="col-md-12 col-lg-6 py-lg-5">
              
                 <div class="my-5">
                    <!--  <?= (new Alerta())->devolverAlertas() ?> -->
                 </div>
 
-                <div class="p-3 p-md-8">
+                <div class="p-md-1">
                     <form class="row g-3 form justify-content-center" method="POST" action="#">
                         <div class="col-md-6">
                             <label for="nombre" class="form-label datos">Nombre *</label>
-                            <input type="text" class="form-control my-1 input__form" id="nombre" name="nombre" aria-describedby="nombre" placeholder="Ingresá tu nombre" required>
+                            <input type="text" class="form-control my-3 p-3" id="nombre" name="nombre" aria-describedby="nombre" placeholder="Ingresá tu nombre" required>
                         </div>
                         <div class="col-md-6">
                             <label for="apellido" class="form-label datos">Apellido *</label>
-                            <input type="text" class="form-control my-1 input__form" id="apellido" name="apellido" aria-describedby="apellido" placeholder="Ingresá tu apellido" required>
+                            <input type="text" class="form-control my-3 p-3" id="apellido" name="apellido" aria-describedby="apellido" placeholder="Ingresá tu apellido" required>
                         </div>
                         <div class="col-md-6">
                             <label for="email" class="form-label datos">Email *</label>
-                            <input type="email" class="form-control my-1 input__form" id="email" name="email" aria-describedby="email" placeholder="Ingresá tu email" required>
+                            <input type="email" class="form-control my-3 p-3" id="email" name="email" aria-describedby="email" placeholder="Ingresá tu email" required>
                         </div>
                         <div class="col-md-6">
                             <label for="nroTel" class="form-label datos">Teléfono *</label>
-                            <input type="number" class="form-control my-1 input__form" id="nroTel" name="nroTel" aria-describedby="nroTel" placeholder="Número de teléfono" required>
+                            <input type="number" class="form-control my-1 p-3" id="nroTel" name="nroTel" aria-describedby="nroTel" placeholder="Número de teléfono" required>
                         </div>
                        
                        
-                        <div class="col-md-12 text-center">
-                            <label for="comentarios" class="form-label text-center datos">Dudas, comentarios... quejas! </label>
+                        <div class="col-md-12 my-md-5">
+                            <label for="comentarios" class="form-label text-center datos">Dejá un comentario </label>
                             <div class="container__form__textarea d-flex justify-content-center my-1">
                                 <textarea class="form-control" id="comentarios" name="comentarios" placeholder="Escribí aquí tu consulta o comentario *" rows="3" required></textarea>
                             </div>
                         </div>
 
-                        <div class="col-12 d-flex justify-content-center">
-                            <button type="submit" class="btn btn-primary form__btn">Enviar</button>
+                        <div class="col-12 py-3">
+                            <button type="submit" class="btn btn__enviar">Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -283,7 +280,6 @@
         </div>
 
         <!-- Fin div class container py-2 -->
-    </div>
 
     </form>
 

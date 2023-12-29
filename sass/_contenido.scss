@@ -296,8 +296,7 @@ a {
 
 .contacto__container {
     text-align: center;
-    margin: 50px;
-    padding: 30px;
+    padding: 10px;
     border: solid 1px #000;
     background-color: #ff4500;
     border-radius: 4px;
@@ -311,6 +310,15 @@ a {
         }
 }
 
+.form-label{
+
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.form-control{
+    font-size: 15px;
+}
 .modal-header {
     background-color: orange;
     border-bottom: none;
