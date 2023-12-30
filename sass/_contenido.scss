@@ -284,6 +284,19 @@ a {
     @include img-grid-col-row(auto, auto);
 }
 
+.span__mas__vendidos{
+    color: #699019;
+}
+
+.item{
+
+    transition: all 0.3s;
+}
+
+.item:hover{
+
+    transform: scale(1.1);
+}
 /*...............................INDEX: FORMULARIO DE CONTACTO...........................*/
 
 @mixin campo-form {
@@ -337,6 +350,11 @@ a {
     border-top: none;
 }
 
+.plato__img{
+
+    height: 176px;
+    width: 130px;
+}
 /*............................... INDEX: MEDIOS DE PAGO...........................*/
 
 .pagos__container {

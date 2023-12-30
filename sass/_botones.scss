@@ -31,6 +31,11 @@
  
 }
 
+.btn__ver__mas{
+    font-size: 20px;
+    padding: 10px;
+}
+
 #btn-link-preguntas {
     @extend .btn__base;
     @include btn-medidas(230px, 50px);

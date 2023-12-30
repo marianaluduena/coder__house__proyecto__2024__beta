@@ -403,6 +403,18 @@ a#link__al__menu__especial {
   grid-row: auto;
 }
 
+.span__mas__vendidos {
+  color: #699019;
+}
+
+.item {
+  transition: all 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
 /*...............................INDEX: FORMULARIO DE CONTACTO...........................*/
 .contacto__container {
   text-align: center;
@@ -447,6 +459,11 @@ a#link__al__menu__especial {
 .modal-footer {
   background-color: #ffa500;
   border-top: none;
+}
+
+.plato__img {
+  height: 176px;
+  width: 130px;
 }
 
 /*............................... INDEX: MEDIOS DE PAGO...........................*/
@@ -1180,6 +1197,11 @@ footer {
 
 #btn__menu__main {
   width: 100%;
+}
+
+.btn__ver__mas {
+  font-size: 20px;
+  padding: 10px;
 }
 
 #btn-link-preguntas {
