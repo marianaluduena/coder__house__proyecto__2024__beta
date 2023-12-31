@@ -24,6 +24,8 @@ header nav ul a#link__naranja {
 }
 header nav ul a#link__naranja:hover {
   color: #ff4500;
+  -webkit-text-decoration: solid 1px #ff4500;
+          text-decoration: solid 1px #ff4500;
 }
 header nav .header__logo {
   height: 100px;
@@ -408,7 +410,7 @@ a#link__al__menu__especial {
 }
 
 .item {
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 
 .item:hover {
