@@ -64,10 +64,6 @@ a {
 .banner__text {
     transform: translate(-5%, -5%);
 
-    h1 {
-        text-align: center;
-        font-size: 10rem;
-    }
 }
 
 /*..........................CLASE BOX PARA ANIMACION DE PORTADA DEL INDEX..................*/
@@ -75,7 +71,7 @@ a {
 .box {
     font-size: map-get($caja-titulos-anim-index, fuenteTam);
     opacity: 0;
-    width: 100%;
+    width: 500px;
     text-align: center;
     position: absolute;
 }
