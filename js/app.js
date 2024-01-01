@@ -16,3 +16,16 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+// Código para la animación Scroll
+
+window.addEventListener("scroll", function(){
+
+    // 
+let elementoAnimado = document.getElementById("animado");
+let posicion = elementoAnimado.getBoundingClientRect();
+
+console.log(posicion);
+});
+
+

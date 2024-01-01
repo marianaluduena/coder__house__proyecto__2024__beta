@@ -16,7 +16,7 @@ $color in $colors {
 
 .nombre__empresa {
     font-family: "Indie Flower", Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     color: whitesmoke;
     text-decoration: none;
 }
@@ -28,8 +28,6 @@ $color in $colors {
 
 .portada__container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     background-position: center;
     background-size: cover;
     background-color: orange;
@@ -37,6 +35,8 @@ $color in $colors {
     font-size: 50px;
     font-weight: 30px;
     margin-bottom: 5rem;
+    justify-content: center;
+    //align-items: flex-start;
 }
 
 .portada__index {
@@ -191,6 +191,7 @@ a {
         display: flex;
         flex-direction: column;
         max-width: 50%;
+       
 
         .solucion__descripcion {
             padding: 3.5rem;
@@ -203,6 +204,7 @@ a {
             font-family: $main-font-family;
             text-align: center;
             background-color: #ffa500;
+            border-radius: 10px;
         }
 
         .aside {
@@ -211,6 +213,7 @@ a {
             margin-right: 1rem;
             margin-left: 2.5rem;
             padding: 2rem;
+            border-radius: 10px;
 
             .aside__descripcion {
                 font-family: $main-font-family;
@@ -219,6 +222,7 @@ a {
                 line-height: 3.5rem;
                 margin-bottom: 3rem;
                 margin-left: 3.2rem;
+                
             }
 
         }

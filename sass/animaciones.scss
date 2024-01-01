@@ -1,0 +1,9 @@
+/*..................Animación scrolling........*/
+
+@keyframes scroll{
+
+    0%{
+        // Los elementos se moverán de derecha a izquierda
+        transform: translate(100%);
+    }
+}

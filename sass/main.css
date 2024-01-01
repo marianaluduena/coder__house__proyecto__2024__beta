@@ -23,16 +23,18 @@ header nav .header__logo {
 header ul a {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 2rem;
   font-family: cursive;
   padding: 0.5rem;
   margin-left: 2rem;
 }
 header ul a#link__blanco {
   color: #000;
+  font-size: 20px;
 }
 header ul a#link__blanco:hover {
   color: whitesmoke;
+  -webkit-text-decoration: underline solid;
+          text-decoration: underline solid;
 }
 header img {
   max-width: 100%;
@@ -80,6 +82,7 @@ h1 {
   background-color: #ffa500;
   width: 100%;
   margin: auto;
+  border-radius: 10px;
 }
 
 .parrafo__descripcion, .parrafo__form__encabezado {
@@ -184,7 +187,7 @@ h1 {
 /*--------------------------------------------INDEX: PORTADA-----------------------------------------------------*/
 .nombre__empresa {
   font-family: "Indie Flower", Arial, Helvetica, sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   color: whitesmoke;
   text-decoration: none;
 }
@@ -196,8 +199,6 @@ h1 {
 
 .portada__container, .portada__contacto, .portada__nosotros, .portada__preguntas, .portada__menu, .portada__index {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   background-position: center;
   background-size: cover;
   background-color: orange;
@@ -205,6 +206,7 @@ h1 {
   font-size: 50px;
   font-weight: 30px;
   margin-bottom: 5rem;
+  justify-content: center;
 }
 
 .portada__index {
@@ -341,6 +343,7 @@ a#link__al__menu__especial {
   font-family: "Indie Flower";
   text-align: center;
   background-color: #ffa500;
+  border-radius: 10px;
 }
 .propuesta__container__grid .solucion__descripcion__container .aside {
   background-color: #ff4500;
@@ -348,6 +351,7 @@ a#link__al__menu__especial {
   margin-right: 1rem;
   margin-left: 2.5rem;
   padding: 2rem;
+  border-radius: 10px;
 }
 .propuesta__container__grid .solucion__descripcion__container .aside .aside__descripcion {
   font-family: "Indie Flower";
@@ -1263,4 +1267,85 @@ footer {
   margin-left: 5rem;
   grid-column: auto;
   grid-row: auto;
+}
+
+/*..........................CLASE BOX PARA ANIMACION DE PORTADA DEL INDEX..................*/
+.box {
+  font-size: 5rem;
+  opacity: 0;
+  width: 500px;
+  text-align: center;
+  position: absolute;
+}
+
+.b1 {
+  animation: animUno 15s infinite;
+}
+
+.b2 {
+  animation: animDos 15s infinite;
+}
+
+.b3 {
+  animation: animTres 15s infinite;
+}
+
+.b4 {
+  animation: animCuatro 15s infinite;
+}
+
+@keyframes animUno {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+@keyframes animDos {
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+@keyframes animTres {
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+@keyframes animCuatro {
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+@keyframes animCinco {
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
