@@ -25,10 +25,11 @@
 
 <body>
   <header>
+<!-- 
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid ">
-        <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" class="header__logo"
-            alt="corazon de frutas y verduras" /></a>
+        <a class="navbar-brand nombre__empresa d-none d-lg-block" href="./index.html"><img src="./images/logo.png"
+            class="header__logo" alt="corazon de frutas y verduras" />Viandas Gaia</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -50,8 +51,43 @@
             alt="carrito de compras" />
         </div>
       </div>
+    </nav>-->
+
+    <nav class="navbar navbar-dark bg-light fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="nombre__empresa m-auto d-none d-lg-block" href="./index.html"><img src="./images/logo.png"
+          class="header__logo" alt="corazon de frutas y verduras" />Viandas Gaia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+
+            <ul class="navbar-nav">
+              <a id="link__naranja" aria-current="page" href="./index.html">Home</a>
+              <a id="link__naranja" aria-current="page" href="./paginas/menu.html">Nuestro menu</a>
+              <a id="link__naranja" aria-current="page" href="./paginas/preguntas_frecuentes.html">Preguntas
+                frecuentes</a>
+              <a id="link__naranja" aria-current="page" href="./paginas/nosotros.html">Nosotros</a>
+              <a id="link__naranja" aria-current="page" href="./paginas/contacto.html">Contacto</a>
+            </ul>
+
+          </div>
+        </div>
+        <a class="nombre__empresa m-auto d-lg-none" href="./index.html">Viandas Gaia</a>
+      </div>
+
     </nav>
   </header>
+
+
 
   <section>
     <div>
@@ -67,16 +103,17 @@
     </div>
   </section>
 
+
   <!-- Cualidades del producto en banner con animacion-->
 
   <section>
-    <div class="row row__portada__index">
+    <div class="row">
       <div class="col-md-12">
 
-        <div class="portada__container portada__index">
+        <div class="portada__index">
           <div class="banner">
             <div class="banner__text">
-              <h1>Viandas Gaia</h1>
+              <!-- <h1>Viandas Gaia</h1> -->
               <div>
                 <div class="box b1 animUno #titulos__animados__index">
                   Rico y nutritivo

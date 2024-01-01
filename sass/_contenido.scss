@@ -1,4 +1,4 @@
-$colors:(
+$colors: (
     orange:#ffa500,
     darkOrange: #ff4500,
     brown: #523024,
@@ -13,6 +13,13 @@ $color in $colors {
 }
 
 /*--------------------------------------------INDEX: PORTADA-----------------------------------------------------*/
+
+.nombre__empresa {
+    font-family: "Indie Flower", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: whitesmoke;
+    text-decoration: none;
+}
 
 .row__portada__index {
     max-width: 100%;
@@ -221,6 +228,7 @@ a {
         }
     }
 }
+
 /*------------------------INDEX: MAIN (VALORES DE LA EMPRESA)----------------*/
 
 .main {
@@ -284,19 +292,20 @@ a {
     @include img-grid-col-row(auto, auto);
 }
 
-.span__mas__vendidos{
+.span__mas__vendidos {
     color: #699019;
 }
 
-.item{
+.item {
 
     transition: all 0.1s;
 }
 
-.item:hover{
+.item:hover {
 
     transform: scale(1.1);
 }
+
 /*...............................INDEX: FORMULARIO DE CONTACTO...........................*/
 
 @mixin campo-form {
@@ -315,23 +324,24 @@ a {
     border-radius: 4px;
 
     form .campo {
-            @include campo-form;
+        @include campo-form;
 
-            &#consulta {
-                height: 30rem;
-            }
+        &#consulta {
+            height: 30rem;
         }
+    }
 }
 
-.form-label{
+.form-label {
 
     font-size: 15px;
     color: whitesmoke;
 }
 
-.form-control{
+.form-control {
     font-size: 15px;
 }
+
 .modal-header {
     background-color: orange;
     border-bottom: none;
@@ -350,11 +360,12 @@ a {
     border-top: none;
 }
 
-.plato__img{
+.plato__img {
 
     height: 176px;
     width: 130px;
 }
+
 /*............................... INDEX: MEDIOS DE PAGO...........................*/
 
 .pagos__container {
@@ -408,7 +419,7 @@ a {
                 }
 
                 .navbar-toggler-icon {
-                    padding: 40px;
+                    padding: 10px;
                 }
 
                 .header__nav--carrito {
@@ -418,11 +429,12 @@ a {
         }
     }
 
-    .portada__titulo { /*CLASE NO USADA EN EL INDEX PERO SÍ EN LAS OTRAS PORTADAS */
+    .portada__titulo {
+        /*CLASE NO USADA EN EL INDEX PERO SÍ EN LAS OTRAS PORTADAS */
         font-size: 7rem;
     }
 
-    .portada__index{
+    .portada__index {
         height: 100%;
     }
 
@@ -531,11 +543,11 @@ a {
 
     nav {
         width: 100%;
-
+        /*
         .navbar-toggler-icon {
             background-color: #ffa500;
             padding: 2.3rem;
-        }
+        }*/
     }
 
     .banner__text h1 {
@@ -600,7 +612,7 @@ main {
 
 @media only screen and (max-width: 599px) {
 
-    .portada__menu{
+    .portada__menu {
         height: 100%;
     }
 
@@ -749,7 +761,7 @@ main {
 
 @media only screen and (max-width: 599px) {
 
-    .portada__preguntas{
+    .portada__preguntas {
         height: 100%;
     }
 
@@ -895,7 +907,7 @@ main {
 
 @media only screen and (max-width: 599px) {
 
-    .portada__nosotros{
+    .portada__nosotros {
         height: 100%;
     }
 
@@ -906,22 +918,25 @@ main {
 
     .historia__container__texto {
         max-width: 100%;
-        .historia__container__subtitulo__uno{
+
+        .historia__container__subtitulo__uno {
             margin-bottom: 3rem;
         }
     }
 
-    .img__historia__container__uno{
+    .img__historia__container__uno {
         margin-top: 3rem;
         margin-bottom: 3rem;
     }
 
     .historia__container__dos {
         flex-direction: column;
-        .historia__container__subtitulo__dos{
+
+        .historia__container__subtitulo__dos {
             margin-bottom: 3rem;
         }
-        .img__historia__container__dos{
+
+        .img__historia__container__dos {
             margin-top: 3rem;
             margin-bottom: 3rem;
         }
@@ -929,8 +944,9 @@ main {
 
     .historia__container__tres {
         flex-direction: column;
-        .img__historia__container__tres{
-             margin-bottom: 3rem;
+
+        .img__historia__container__tres {
+            margin-bottom: 3rem;
         }
     }
 
@@ -1024,7 +1040,7 @@ form {
 
 @media only screen and (max-width: 599px) {
 
-    .portada__contacto{
+    .portada__contacto {
         height: 100%;
     }
 

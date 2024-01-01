@@ -13,42 +13,49 @@ html {
 header {
 
     nav {
-      
-    
-        ul {
-            
-            a {
-                text-transform: uppercase;
-                text-decoration: none;
-                font-size: 2rem;
-                font-family: cursive;
-                padding: 0.5rem;
-                margin-left: 2rem;
-    
-                &#link__naranja {
-                    color: #000;
-                }
-    
-                &#link__naranja:hover {
-                    color: #ff4500;
-                    
-                }
-            }
-    
+
+        .container-fluid {
+            background-color: #699019;
         }
-        .header__logo {
-            height: 100px;
-            width: auto;
-        
-            img {
-                max-width: 100%;
-                height: auto;
+
+        .container-fluid .navbar-toggler-icon {
+            padding: 20px;
+        }
+
+    }
+
+    ul {
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 2rem;
+            font-family: cursive;
+            padding: 0.5rem;
+            margin-left: 2rem;
+
+            &#link__naranja {
+                color: #000;
+            }
+
+            &#link__naranja:hover {
+                color: #ff4500;
+
             }
         }
 
     }
 
+    .header__logo {
+        height: 100px;
+        width: auto;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+  header nav .header__logo{
+    width: 10rem;
+  }
 }
-
-
-
