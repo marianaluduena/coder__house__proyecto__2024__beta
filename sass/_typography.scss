@@ -74,7 +74,7 @@ $caja-titulos-anim-index:(
 
 .subtitulos__especiales {
     font-family: $special-font-family;
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
     margin-top: 3rem;
 }
@@ -160,4 +160,11 @@ $botones-acordeon-preguntas:(
     @extend .parrafos;
     height: auto;
     padding: 45px;
+}
+
+@media only screen and (min-width: 600px){
+    .subtitulos__especiales{
+
+        font-size: 2.5rem;
+    } 
 }

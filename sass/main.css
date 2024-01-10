@@ -103,7 +103,7 @@ h1 {
 
 .subtitulos__especiales {
   font-family: "cursive";
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   margin-top: 3rem;
 }
@@ -175,16 +175,24 @@ h1 {
   padding: 45px;
 }
 
+@media only screen and (min-width: 600px) {
+  .subtitulos__especiales {
+    font-size: 2.5rem;
+  }
+}
 .bg--orange {
   background-color: #ffa500;
+  padding: 2.5rem;
 }
 
 .bg--darkOrange {
   background-color: #ff4500;
+  padding: 2.5rem;
 }
 
 .bg--brown {
   background-color: #523024;
+  padding: 2.5rem;
 }
 
 /*--------------------------------------------INDEX: PORTADA-----------------------------------------------------*/
@@ -319,6 +327,7 @@ a#link__al__menu__especial {
   display: flex;
   flex-direction: row;
   max-width: 100%;
+  margin-bottom: 2rem;
 }
 .propuesta__container__grid .solucion__image__container {
   display: flex;
@@ -333,14 +342,11 @@ a#link__al__menu__especial {
 .propuesta__container__grid .solucion__descripcion__container {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 100%;
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
 .propuesta__container__grid .solucion__descripcion__container .solucion__descripcion {
-  padding: 3.5rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  margin-left: 2.5rem;
-  margin-right: 2rem;
   line-height: 3rem;
   font-size: 2rem;
   font-family: "Indie Flower";
@@ -348,7 +354,7 @@ a#link__al__menu__especial {
   background-color: #ffa500;
   border-radius: 10px;
 }
-.propuesta__container__grid .solucion__descripcion__container .aside {
+.propuesta__container__grid .aside {
   background-color: #ff4500;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -356,7 +362,7 @@ a#link__al__menu__especial {
   padding: 2rem;
   border-radius: 10px;
 }
-.propuesta__container__grid .solucion__descripcion__container .aside .aside__descripcion {
+.propuesta__container__grid .aside .aside__descripcion {
   font-family: "Indie Flower";
   font-size: 3rem;
   text-align: center;
@@ -434,9 +440,8 @@ a#link__al__menu__especial {
 .contacto__container {
   text-align: center;
   padding: 10px;
-  border: solid 1px #000;
-  background-color: #ff4500;
-  border-radius: 4px;
+  border: none;
+  background-color: #fff;
 }
 .contacto__container form .campo {
   display: block;
@@ -444,6 +449,7 @@ a#link__al__menu__especial {
   padding: 10px;
   margin: 10px auto;
   font-size: 2.5rem;
+  border-radius: 15px;
 }
 .contacto__container form .campo#consulta {
   height: 30rem;
@@ -550,19 +556,6 @@ a#link__al__menu__especial {
     margin-left: 2rem;
     margin-top: 5rem;
   }
-  .info__contacto__descripcion,
-  .subtitulo__principal,
-  .propuesta__container__grid,
-  .animUno,
-  .animDos,
-  .animTres,
-  .animCuatro,
-  .subtitulo__principal__uno,
-  .solucion__image__container,
-  .solucion__descripcion,
-  .aside {
-    display: none;
-  }
   .subtitulo__principal {
     font-size: 5rem;
   }
@@ -613,19 +606,10 @@ a#link__al__menu__especial {
 @media only screen and (min-width: 768px) {
   nav {
     width: 100%;
-    /*
-    .navbar-toggler-icon {
-        background-color: #ffa500;
-        padding: 2.3rem;
-    }*/
   }
   .banner__text h1 {
     font-size: 8rem;
     color: #000;
-  }
-  .propuesta__container__grid {
-    grid-template-columns: 3, 1fr;
-    grid-area: "solucion__descripcion__grid" "aside__grid";
   }
   .propuesta__container__grid .solucion__descripcion__container {
     max-width: 100%;

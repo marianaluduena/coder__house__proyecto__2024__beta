@@ -9,6 +9,7 @@ $color in $colors {
 
     .bg--#{$colorcito} {
         background-color: $color;
+        padding: 2.5rem;
     }
 }
 
@@ -36,7 +37,6 @@ $color in $colors {
     font-weight: 30px;
     margin-bottom: 5rem;
     justify-content: center;
-    //align-items: flex-start;
 }
 
 .portada__index {
@@ -173,6 +173,7 @@ a {
     display: flex;
     flex-direction: row;
     max-width: 100%;
+    margin-bottom: 2rem;
 
     .solucion__image__container {
         display: flex;
@@ -187,24 +188,24 @@ a {
 
     }
 
+
     .solucion__descripcion__container {
         display: flex;
         flex-direction: column;
-        max-width: 50%;
-       
+        max-width: 100%;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    
 
         .solucion__descripcion {
-            padding: 3.5rem;
-            margin-top: 2rem;
-            margin-bottom: 3rem;
-            margin-left: 2.5rem;
-            margin-right: 2rem;
             line-height: 3rem;
             font-size: 2rem;
             font-family: $main-font-family;
             text-align: center;
             background-color: #ffa500;
             border-radius: 10px;
+          
+        }
         }
 
         .aside {
@@ -222,12 +223,12 @@ a {
                 line-height: 3.5rem;
                 margin-bottom: 3rem;
                 margin-left: 3.2rem;
-                
+
             }
 
         }
     }
-}
+
 
 /*------------------------INDEX: MAIN (VALORES DE LA EMPRESA)----------------*/
 
@@ -319,12 +320,12 @@ a {
 .contacto__container {
     text-align: center;
     padding: 10px;
-    border: solid 1px #000;
-    background-color: #ff4500;
-    border-radius: 4px;
+    border: none;
+    background-color: #fff;
 
     form .campo {
         @include campo-form;
+        border-radius: 15px;
 
         &#consulta {
             height: 30rem;
@@ -456,20 +457,6 @@ a {
         }
     }
 
-    .info__contacto__descripcion,
-    .subtitulo__principal,
-    .propuesta__container__grid,
-    .animUno,
-    .animDos,
-    .animTres,
-    .animCuatro,
-    .subtitulo__principal__uno,
-    .solucion__image__container,
-    .solucion__descripcion,
-    .aside {
-        display: none;
-    }
-
     .subtitulo__principal {
         font-size: 5rem;
     }
@@ -543,11 +530,6 @@ a {
 
     nav {
         width: 100%;
-        /*
-        .navbar-toggler-icon {
-            background-color: #ffa500;
-            padding: 2.3rem;
-        }*/
     }
 
     .banner__text h1 {
@@ -555,16 +537,10 @@ a {
         color: #000;
     }
 
-    .propuesta__container__grid {
-        grid-template-columns: (3, 1fr);
-        grid-area:
-            "solucion__descripcion__grid"
-            "aside__grid";
-    }
-
-    .propuesta__container__grid .solucion__descripcion__container  {
+    .propuesta__container__grid .solucion__descripcion__container {
         max-width: 100%;
     }
+
     .pagos__container .container {
         width: auto;
     }
