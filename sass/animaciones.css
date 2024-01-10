@@ -1,1 +1,7 @@
-/*# sourceMappingURL=animaciones.css.map */
+@charset "UTF-8";
+/*..................Animación scrolling........*/
+@keyframes scroll {
+  0% {
+    transform: translate(100%);
+  }
+}/*# sourceMappingURL=animaciones.css.map */

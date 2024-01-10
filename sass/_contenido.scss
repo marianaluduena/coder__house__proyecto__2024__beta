@@ -562,6 +562,9 @@ a {
             "aside__grid";
     }
 
+    .propuesta__container__grid .solucion__descripcion__container  {
+        max-width: 100%;
+    }
     .pagos__container .container {
         width: auto;
     }
@@ -573,6 +576,8 @@ a {
     @extend .portada__container;
     background-image: url("../images/viandas_calabaza.jpg");
 }
+
+
 
 /*..................................... .....PAGINA NUESTRO MENÚ........................................................*/
 
@@ -608,7 +613,9 @@ main {
 
 }
 
-/*..............................................NUESTRO MENU: MEDIAS QUERIES...................*/
+
+
+/*..............................................NUESTRO MENU: MEDIAS QUERIES CELULARES...................*/
 
 @media only screen and (max-width: 599px) {
 

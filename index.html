@@ -63,8 +63,7 @@
         </button>
         <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
           aria-labelledby="offcanvasDarkNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+          <div class="offcanvas-header d-flex justify-content-end d-lg-none">
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
               aria-label="Close"></button>
           </div>
@@ -104,7 +103,7 @@
 
   <!-- Cualidades del producto en banner con animacion-->
 
-  <section>
+  <section class="d-none d-md-block">
     <div class="row">
       <div class="col-md-12">
 
@@ -136,40 +135,43 @@
     </div>
   </section>
 
-  
+
   <section>
     <div>
       <h2 class="subtitulo__principal">Qué solución brindamos?</h2>
     </div>
 
     <div class="propuesta__container__grid container">
-      <div class="solucion__image__container">
-        <img class="viandas__varias__grid" src="./images/small-images/viandas_varias.jpg" alt="viandas varias" />
-      </div>
-      <div class="solucion__descripcion__container">
+      <div class="solucion__image__container ">
+        <img class="viandas__varias__grid d-none d-lg-block" src="./images/small-images/viandas_varias.jpg"
+          alt="viandas varias" />
+        <!-- Código de prueba-->
 
-        <p class="solucion__descripcion solucion__descripcion__grid">
-          Nuestras viandas están pensadas para incorporar hábitos saludables en el
-          día a día sin tener que limitarse a sólo ensaldas y pasar hambre. Es por
-          eso que proponemos un amplio menú variado donde combinamos todo eso que
-          te encanta con ingredientes saludables naturales preparado en el día por
-          nuestros expertos. Porque sabemos que lograr un equilibrio entre lo rico
-          y saludable es posible.
-        </p>
+        <div class="solucion__descripcion__container">
 
-        <aside class="aside aside__grid">
-          <h2 class="aside__titulo"> Quiero saber más!</h2>
-          <p class="aside__descripcion">
-            Mirá nuestra sección de preguntas frecuentes :)
+          <p class="solucion__descripcion solucion__descripcion__grid">
+            Nuestras viandas están pensadas para incorporar hábitos saludables en el
+            día a día sin tener que limitarse a sólo ensaldas y pasar hambre. Es por
+            eso que proponemos un amplio menú variado donde combinamos todo eso que
+            te encanta con ingredientes saludables naturales preparado en el día por
+            nuestros expertos. Porque sabemos que lograr un equilibrio entre lo rico
+            y saludable es posible.
           </p>
-          <div class="btn__link__preguntas__container d-flex justify-content-center">
-            <a href="./paginas/preguntas_frecuentes.html">
-              <button type="button" id="btn-link-preguntas" class="mx-auto">
-                Preguntas frecuentes
-              </button>
-            </a>
-          </div>
-        </aside>
+
+          <aside class="aside aside__grid">
+            <h2 class="aside__titulo"> Quiero saber más!</h2>
+            <p class="aside__descripcion">
+              Mirá nuestra sección de preguntas frecuentes :)
+            </p>
+            <div class="btn__link__preguntas__container d-flex justify-content-center">
+              <a href="./paginas/preguntas_frecuentes.html">
+                <button type="button" id="btn-link-preguntas" class="mx-auto">
+                  Preguntas frecuentes
+                </button>
+              </a>
+            </div>
+          </aside>
+        </div>
       </div>
     </div>
   </section>
