@@ -23,21 +23,52 @@ header nav .header__logo {
 header nav .offcanvas-header {
   background-color: #699019;
 }
-header ul a {
+header ul a,
+header ul .dropdown-toggle {
   text-transform: uppercase;
   text-decoration: none;
   font-family: cursive;
   padding: 0.5rem;
   margin-left: 2rem;
 }
-header ul a#link__blanco {
+header ul a#link__blanco,
+header ul .dropdown-toggle#link__blanco {
   color: #000;
   font-size: 18px;
 }
-header ul a#link__blanco:hover {
+header ul a#link__blanco:hover,
+header ul .dropdown-toggle#link__blanco:hover {
   color: whitesmoke;
   -webkit-text-decoration: underline solid;
           text-decoration: underline solid;
+}
+header ul .dropdown-toggle {
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: all 0.4s ease-out;
+}
+header ul .dropdown-toggle:hover {
+  background-color: orange;
+}
+header ul .accordion-menu {
+  max-height: 350px;
+  margin: 100pxx auto 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+header ul .submenu-items {
+  display: none;
+  background-color: #699019;
+}
+header ul .accordion-menu li .submenu-items {
+  display: block;
+}
+header ul .submenu-items a {
+  display: block;
+  transition: all 0.2s ease-out;
 }
 header img {
   max-width: 100%;

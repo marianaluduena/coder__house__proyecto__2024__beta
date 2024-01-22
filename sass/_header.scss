@@ -26,7 +26,7 @@ header {
             height: 10rem;
         }
 
-        .offcanvas-header{
+        .offcanvas-header {
             background-color: #699019;
         }
 
@@ -34,7 +34,8 @@ header {
 
     ul {
 
-        a {
+        a,
+        .dropdown-toggle {
             text-transform: uppercase;
             text-decoration: none;
             font-family: cursive;
@@ -53,6 +54,40 @@ header {
             }
         }
 
+        .dropdown-toggle {
+            color: #000;
+            font-size: 18px;
+            cursor: pointer;
+            display: block;
+            position: relative;
+            transition: all 0.4s ease-out;
+        }
+
+        .dropdown-toggle:hover{
+            background-color: orange;
+        }
+
+        .accordion-menu {
+            max-height: 350px;
+            margin: 100pxx auto 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .submenu-items{
+            display: none;
+            background-color: #699019;
+        }
+
+        .accordion-menu li .submenu-items{
+            display: block;
+        }
+
+        .submenu-items a{
+            display: block;
+            transition: all 0.2s ease-out;
+        
+        }
     }
 
     img {
